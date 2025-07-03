@@ -2,16 +2,23 @@
    VARIABLES DE COLOR
 ============================================ */
 :root {
-  --cerulean:         #0cbdd5;  /* Azul vibrante usado para botones */
-  --matisse:          #2474ae;  /* Azul intermedio */
-  --half-baked:       #0a97a8;  /* Azul pastel suave */
-  --blue-zodiac:      #0e4c85;  /* Azul oscuro para fondos */
-  --blue-zodiac-dark: #0f2747;  /* Azul muy oscuro para texto fuerte */
-  --firefly:          #09141d;  /* Casi negro con tinte azul para fondo principal */
-  --bon-jour:         #e0dcdc;  /* Gris claro, elegante para texto */
-  --geyser:           #d9e0e3;  /* Gris azulado para fondos claros */
-  --abbey:            #4c4f53;  /* Gris oscuro para íconos */
-  --white:            #ffffff;  /* Blanco puro para contraste */
+  /* 🌊 Tonos Azules Principales */
+  --cerulean:         #0cbdd5;  /* Azul cerúleo */
+  --matisse:          #2474ae;  /* Azul matisse */
+  --half-baked:       #0a97a8;  /* Azul pastel */
+  --blue-zodiac:      #0e4c85;  /* Azul profundo */
+  --blue-zodiac-dark: #0f2747;  /* Azul muy oscuro */
+
+  /* 🌑 Fondos Oscuros */
+  --firefly:          #09141d;  /* Azul verdoso muy oscuro */
+
+  /* 🎨 Neutros y Grises */
+  --bon-jour:         #e0dcdc;  /* Gris claro elegante */
+  --geyser:           #d9e0e3;  /* Gris azulado claro */
+  --abbey:            #4c4f53;  /* Gris oscuro */
+
+  /* ⚪️ Blanco puro */
+  --white:            #ffffff;  /* Blanco puro */
 }
 
 /* ============================================
@@ -36,6 +43,13 @@ header {
   position: sticky; /* Fijo al hacer scroll */
   top: 0;
   z-index: 1000; /* Siempre encima */
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .logo {
@@ -153,6 +167,11 @@ footer {
 @media (max-width: 1400px) {
   .menu-toggle {
     display: block;
+	background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
   }
 
   .nav-links {
@@ -224,4 +243,210 @@ footer {
     font-size: 1.2rem;
     padding: 0.75rem 0;
   }
+}
+
+/* ============================================
+   OTROS PARA ORGANIZAR
+============================================ */
+.contenido {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  background-color: var(--firefly);
+}
+
+.col {
+  width: 300px;
+  margin: 1rem;
+}
+
+* SECCIÓN DESTACADAS */
+.seccion-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  background-color: var(--geyser);
+  gap: 2rem;
+}
+
+.card {
+  background: radial-gradient(circle at top left, var(--blue-zodiac), var(--firefly));
+  border-radius: 20px;
+  padding: 2rem;
+  color: var(--bon-jour);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--cerulean);
+}
+
+.card video {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 0.5rem;
+}
+
+.slider {
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 0.5rem;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: var(--abbey);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: var(--cerulean);
+}
+
+/* SECCIÓN BENEFICIOS */
+.seccion-beneficios {
+  background-color: var(--firefly);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 2.5rem;
+  color: var(--cerulean);
+  margin-bottom: 2rem;
+}
+
+.contenedor-beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.beneficio {
+  background: linear-gradient(to bottom, var(--half-baked), var(--blue-zodiac));
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 280px;
+  width: 100%;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.beneficio.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.beneficio h3 {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.beneficio ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.beneficio li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.beneficio li .icon {
+  min-width: 1.5rem;
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+/* Animación */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.nav-links a,
+.nav-links a:visited,
+.nav-links a:focus,
+.nav-links a:active {
+  color: var(--white);  /* o var(--bon-jour) si quieres gris claro */
+  text-decoration: none;
+}
+.logo h1 a,
+.logo h1 a:visited,
+.logo h1 a:focus,
+.logo h1 a:active {
+  color: var(--white);       /* o var(--cerulean) si quieres mantenerlo azul claro */
+  text-decoration: none;     /* sin subrayado */
+}
+.beneficio {
+  opacity: 1 !important;
+  transform: none !important;
 }
