@@ -1,0 +1,159 @@
+:root {
+  /* 🌊 Tonos Azules Principales */
+  --cerulean:         #0cbdd5;  /* Azul cerúleo */
+  --matisse:          #2474ae;  /* Azul matisse */
+  --half-baked:       #0a97a8;  /* Azul pastel */
+  --blue-zodiac:      #0e4c85;  /* Azul profundo */
+  --blue-zodiac-dark: #0f2747;  /* Azul muy oscuro */
+
+  /* 🌑 Fondos Oscuros */
+  --firefly:          #09141d;  /* Azul verdoso muy oscuro */
+
+  /* 🎨 Neutros y Grises */
+  --bon-jour:         #e0dcdc;  /* Gris claro elegante */
+  --geyser:           #d9e0e3;  /* Gris azulado claro */
+  --abbey:            #4c4f53;  /* Gris oscuro */
+
+  /* ⚪️ Blanco puro */
+  --white:            #ffffff;  /* Blanco puro */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--firefly);
+  color: var(--bon-jour);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 2rem;
+  background-color: var(--firefly);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Hero principal */
+.hero-nosotros {
+  background: linear-gradient(to right, var(--half-baked), var(--blue-zodiac));
+  padding: 5rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.hero-nosotros h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-nosotros p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Sección Misión y Visión */
+.mision p2,
+.vision p2 {
+  color: var(--blue-zodiac-dark);
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-weight: bold;
+}
+
+.mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem 2rem;
+  background-color: var(--white);
+}
+
+.mision,
+.vision {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.mision h2,
+.vision h2 {
+  color: var(--cerulean);
+  margin-bottom: 0.5rem;
+}
+
+/* Historia */
+.historia {
+  background: linear-gradient(to right, var(--half-baked), var(--blue-zodiac));
+  padding: 5rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.historia h2 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Equipo fundador */
+.equipo {
+  background-color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.equipo h2 {
+  color: var(--cerulean);
+  margin-bottom: 2rem;
+}
+
+.tarjetas-equipo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.miembro {
+  background: var(--blue-zodiac);
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 250px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.miembro img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.miembro h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: var(--cerulean);
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  background-color: var(--firefly);
+}
+
+.col {
+  width: 300px;
+  margin: 1rem;
+}
+
+footer {
+  background-color: var(--firefly);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}

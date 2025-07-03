@@ -1,0 +1,46 @@
+:root {
+  /* 🌊 Tonos Azules Principales */
+  --cerulean:         #0cbdd5;  /* Azul cerúleo (color brillante principal, botones, acentos) */
+  --matisse:          #2474ae;  /* Azul matisse (botones secundarios, acentos suaves) */
+  --half-baked:       #0a97a8;  /* Azul pastel (gradientes suaves, fondos intermedios) */
+  --blue-zodiac:      #0e4c85;  /* Azul profundo (gradientes, tarjetas oscuras) */
+  --blue-zodiac-dark: #0f2747;  /* Azul muy oscuro (texto importante o títulos en fondos claros) */
+
+  /* 🌑 Fondos Oscuros */
+  --firefly:          #09141d;  /* Azul verdoso muy oscuro (fondo general) */
+
+  /* 🎨 Neutros y Grises */
+  --bon-jour:         #e0dcdc;  /* Gris claro elegante (texto suave sobre fondo oscuro) */
+  --geyser:           #d9e0e3;  /* Gris azulado muy claro (fondos tipo blanco, tarjetas claras) */
+  --abbey:            #4c4f53;  /* Gris oscuro (íconos, bordes, botones pasivos) */
+}
+
+
+/* CSS Paleta Primary HEX */
+
+  --matisse; 		#2474ae;	/* Azul matisse */
+  --bon-jour: 		#e0dcdc;	/* Buenos días (gris claro elegante) */
+  --cerulean: 		#0cbdd5;	/* Azul cerúleo */
+  --gray: 			#858081;	/* Gris */
+  --flint: 			#746c64;	/* Pedernal (gris piedra) */
+  --nobel: 			#b5aead;	/* Gris noble */
+  --scorpion: 		#746463;	/* Escorpión (gris oscuro con tono cálido) */
+  --half-baked: 	#90c4d8;	/* Azul pastel (medio horneado) */
+  --dawn: 			#a7a49c;	/* Amanecer (gris pálido) */
+  --cotton-seed: 	#bfbcb3;    /* Semilla de algodón (beige/gris claro) */
+
+
+/* CSS Paleta Secundaria HEX */
+
+  --firefly			#09141d;   	/* Luciérnaga original (azul verdoso muy oscuro) */
+  --geyser:			#d9e0e3;	/* Géiser (gris muy claro con azul) */
+  --scooter:		#30bed3;	/* Azul scooter (cian brillante) */
+  --chathams-blue:	#114670;	/* Azul Chathams (azul profundo oceánico) */
+  --tory-blue:		#0d5bb2;	/* Azul Tory (azul fuerte) */
+  --blue-zodiac:	#0f2747;	/* Zodíaco azul (azul oscuro profundo) */
+  --abbey:			#4c4f53;	/* Abadía (gris medio oscuro) */
+  --firefly Two:	#0f3434;	/* Luciérnaga (verde azulado oscuro) */ 
+  --spectra:		#2e5453;	/* Espectro (verde petróleo oscuro) */
+  --baltic-sea:		#2c2b33;	/* Mar Báltico (gris grafito oscuro) */
+ 
+ https://imagecolorpicker.com/user/palettes
