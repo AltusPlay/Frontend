@@ -222,6 +222,73 @@ nav a {
 }
 
 /* ============================================
+   SECCION DE BENEFICIOS
+============================================ */
+.seccion-beneficios {
+  background-color: var(--firefly);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 2.5rem;
+  color: var(--cerulean);
+  margin-bottom: 2rem;
+}
+
+.contenedor-beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.beneficio {
+  background: linear-gradient(to bottom, var(--half-baked), var(--blue-zodiac));
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 280px;
+  width: 100%;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.beneficio.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.beneficio h3 {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.beneficio ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.beneficio li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.beneficio li .icon {
+  min-width: 1.5rem;
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+/* ============================================
    PIE DE PÁGINA
 ============================================ */
 footer {
@@ -341,71 +408,6 @@ footer {
   margin: 1rem;
 }
 
-/* SECCIÓN BENEFICIOS */
-.seccion-beneficios {
-  background-color: var(--firefly);
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.titulo-seccion {
-  font-size: 2.5rem;
-  color: var(--cerulean);
-  margin-bottom: 2rem;
-}
-
-.contenedor-beneficios {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.beneficio {
-  background: linear-gradient(to bottom, var(--half-baked), var(--blue-zodiac));
-  border-radius: 16px;
-  padding: 2rem;
-  max-width: 280px;
-  width: 100%;
-  color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.6s ease-out;
-}
-
-.beneficio.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.beneficio h3 {
-  color: white;
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-}
-
-.beneficio ul {
-  list-style: none;
-  padding-left: 0;
-  text-align: left;
-}
-
-.beneficio li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.4;
-}
-
-.beneficio li .icon {
-  min-width: 1.5rem;
-  display: inline-block;
-  font-size: 1.1rem;
-  line-height: 1.4;
-}
-
 /* Animación */
 @keyframes fadeInUp {
   from {
@@ -451,4 +453,41 @@ footer {
 .beneficio {
   opacity: 1 !important;
   transform: none !important;
+}
+/* ============================================
+   RESPONSIVE DESTACADOS (PANTALLAS GRANDES)
+============================================ */
+@media (min-width: 769px) {
+  .seccion-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 2rem;
+  }
+
+  .card {
+    max-width: 300px;
+    flex: 1 1 300px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE DESTACADOS (PANTALLAS PEQUEÑAS)
+============================================ */
+@media (max-width: 768px) {
+  .seccion-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 90%;
+  }
 }
