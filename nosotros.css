@@ -1,159 +1,177 @@
+/* ===================================================
+   PALETA DE COLORES GLOBAL
+=================================================== */
 :root {
-  /* 🌊 Tonos Azules Principales */
-  --cerulean:         #0cbdd5;  /* Azul cerúleo */
-  --matisse:          #2474ae;  /* Azul matisse */
-  --half-baked:       #0a97a8;  /* Azul pastel */
-  --blue-zodiac:      #0e4c85;  /* Azul profundo */
-  --blue-zodiac-dark: #0f2747;  /* Azul muy oscuro */
-
-  /* 🌑 Fondos Oscuros */
-  --firefly:          #09141d;  /* Azul verdoso muy oscuro */
-
-  /* 🎨 Neutros y Grises */
-  --bon-jour:         #e0dcdc;  /* Gris claro elegante */
-  --geyser:           #d9e0e3;  /* Gris azulado claro */
-  --abbey:            #4c4f53;  /* Gris oscuro */
-
-  /* ⚪️ Blanco puro */
-  --white:            #ffffff;  /* Blanco puro */
+  --cerulean:         #0cbdd5;  /* AZUL CLARO INTENSO */
+  --matisse:          #2474ae;  /* AZUL INTERMEDIO */
+  --half-baked:       #0a97a8;  /* AZUL PASTEL */
+  --blue-zodiac:      #0e4c85;  /* AZUL PROFUNDO */
+  --blue-zodiac-dark: #0f2747;  /* AZUL MUY OSCURO */
+  --firefly:          #09141d;  /* CASI NEGRO AZULADO */
+  --bon-jour:         #e0dcdc;  /* GRIS CLARO ELEGANTE */
+  --geyser:           #d9e0e3;  /* GRIS AZULADO CLARO */
+  --abbey:            #4c4f53;  /* GRIS OSCURO */
+  --white:            #ffffff;  /* BLANCO PURO */
 }
 
+/* ===================================================
+   CONFIGURACIÓN GLOBAL
+=================================================== */
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: var(--firefly);
-  color: var(--bon-jour);
+  margin: 0;                         /* Elimina márgenes predeterminados */
+  font-family: 'Inter', sans-serif; /* Fuente moderna y legible */
+  background-color: var(--firefly); /* Fondo oscuro para toda la página */
+  color: var(--bon-jour);           /* Texto en gris claro elegante */
 }
 
+/* ===================================================
+   ENCABEZADO ESTÁNDAR
+=================================================== */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.1rem 2rem;
-  background-color: var(--firefly);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  display: flex;                     /* Activa Flexbox horizontal */
+  justify-content: space-between;   /* Separa logo de menú */
+  align-items: center;              /* Centra verticalmente */
+  padding: 0.1rem 2rem;             /* Espaciado interno */
+  background-color: var(--firefly); /* Fondo oscuro igual al body */
+  position: sticky;                 /* Fijo arriba al hacer scroll */
+  top: 0;                           /* Pegado arriba */
+  z-index: 1000;                    /* Superposición alta */
 }
 
-/* Hero principal */
+/* ===================================================
+   SECCIÓN HERO NOSOTROS
+=================================================== */
 .hero-nosotros {
-  background: linear-gradient(to right, var(--half-baked), var(--blue-zodiac));
-  padding: 5rem 2rem;
-  text-align: center;
-  color: white;
+  background: linear-gradient(to right, var(--half-baked), var(--blue-zodiac)); /* Degradado azul horizontal */
+  padding: 5rem 2rem;               /* Espaciado amplio */
+  text-align: center;              /* Texto centrado */
+  color: white;                    /* Texto blanco */
 }
 
-.hero-nosotros h1 {
-  font-size: 2.8rem;
-  margin-bottom: 0.5rem;
+.hero-nosotros h1,
+.hero-content h2 {
+  font-size: 2.8rem;               /* Título grande */
+  margin-bottom: 0.5rem;          /* Espacio inferior corto */
 }
 
-.hero-nosotros p {
-  font-size: 1.2rem;
-  opacity: 0.9;
+.hero-nosotros p,
+.hero-content p {
+  font-size: 1.2rem;              /* Tamaño de párrafo medio */
+  opacity: 0.9;                   /* Ligera transparencia */
 }
 
-/* Sección Misión y Visión */
-.mision p2,
-.vision p2 {
-  color: var(--blue-zodiac-dark);
-  font-size: 1.2rem;
-  opacity: 0.9;
-  font-weight: bold;
-}
-
+/* ===================================================
+   MISIÓN Y VISIÓN
+=================================================== */
 .mision-vision {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  padding: 3rem 2rem;
-  background-color: var(--white);
+  display: flex;                  /* Flexbox horizontal */
+  flex-wrap: wrap;               /* Salto de línea en pantallas pequeñas */
+  justify-content: center;       /* Centrado horizontal */
+  gap: 3rem;                     /* Espacio entre columnas */
+  padding: 3rem 2rem;            /* Espacio interno */
+  background-color: var(--white);/* Fondo blanco */
 }
 
 .mision,
 .vision {
-  flex: 1 1 300px;
-  max-width: 500px;
+  flex: 1 1 300px;               /* Columnas flexibles desde 300px */
+  max-width: 500px;             /* Máximo 500px */
 }
 
 .mision h2,
 .vision h2 {
-  color: var(--cerulean);
-  margin-bottom: 0.5rem;
+  color: var(--cerulean);       /* Azul claro vibrante */
+  margin-bottom: 0.5rem;        /* Espacio inferior */
 }
 
-/* Historia */
+.mision p2,
+.vision p2 {
+  color: var(--blue-zodiac-dark); /* Azul muy oscuro */
+  font-size: 1.2rem;             /* Tamaño medio */
+  opacity: 0.9;                  /* Transparencia ligera */
+  font-weight: bold;            /* Texto en negrita */
+}
+
+/* ===================================================
+   SECCIÓN HISTORIA
+=================================================== */
 .historia {
-  background: linear-gradient(to right, var(--half-baked), var(--blue-zodiac));
-  padding: 5rem 2rem;
-  text-align: center;
-  color: white;
+  background: linear-gradient(to right, var(--half-baked), var(--blue-zodiac)); /* Fondo degradado */
+  padding: 5rem 2rem;            /* Espacio interno grande */
+  text-align: center;            /* Texto centrado */
+  color: white;                  /* Texto blanco */
 }
 
 .historia h2 {
-  font-size: 2.8rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.8rem;             /* Título principal */
+  margin-bottom: 0.5rem;         /* Separación inferior */
 }
 
-/* Equipo fundador */
+/* ===================================================
+   EQUIPO FUNDADOR
+=================================================== */
 .equipo {
-  background-color: var(--white);
-  padding: 4rem 2rem;
-  text-align: center;
+  background-color: var(--white); /* Fondo blanco */
+  padding: 4rem 2rem;             /* Espaciado interno */
+  text-align: center;             /* Alineación centrada */
 }
 
 .equipo h2 {
-  color: var(--cerulean);
-  margin-bottom: 2rem;
+  color: var(--cerulean);         /* Azul claro intenso */
+  margin-bottom: 2rem;            /* Espacio debajo del título */
 }
 
 .tarjetas-equipo {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: flex;                  /* Contenedor flexible */
+  justify-content: center;       /* Centrado horizontal */
+  flex-wrap: wrap;               /* Permitir múltiples líneas */
+  gap: 2rem;                      /* Espaciado entre tarjetas */
 }
 
 .miembro {
-  background: var(--blue-zodiac);
-  border-radius: 12px;
-  padding: 1.5rem;
-  max-width: 250px;
-  color: white;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background: var(--blue-zodiac);/* Fondo azul oscuro */
+  border-radius: 12px;           /* Bordes redondeados */
+  padding: 1.5rem;               /* Espacio interno */
+  max-width: 250px;              /* Ancho máximo de cada tarjeta */
+  color: white;                  /* Texto blanco */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
 }
 
 .miembro img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 1rem;
+  width: 100%;                   /* Imagen ocupa el ancho total */
+  border-radius: 12px;           /* Imagen con bordes redondeados */
+  margin-bottom: 1rem;           /* Espacio inferior */
 }
 
 .miembro h3 {
-  margin: 0.5rem 0;
-  font-size: 1.2rem;
-  color: var(--cerulean);
+  margin: 0.5rem 0;              /* Margen superior e inferior */
+  font-size: 1.2rem;             /* Tamaño del nombre */
+  color: var(--cerulean);        /* Azul vibrante */
 }
 
+/* ===================================================
+   PIE DE PÁGINA - CONTENIDO INFERIOR
+=================================================== */
 .contenido {
-  display: flex;
-  justify-content: space-around;
-  padding: 4rem 2rem;
-  flex-wrap: wrap;
-  background-color: var(--firefly);
+  display: flex;                 /* Diseño flexible */
+  justify-content: space-around;/* Distribuye columnas equitativamente */
+  padding: 4rem 2rem;           /* Espacio interno generoso */
+  flex-wrap: wrap;              /* Adaptabilidad para pantallas pequeñas */
+  background-color: var(--firefly); /* Fondo oscuro */
 }
 
 .col {
-  width: 300px;
-  margin: 1rem;
+  width: 300px;                 /* Ancho de columna fijo */
+  margin: 1rem;                 /* Separación externa */
 }
 
+/* ===================================================
+   PIE DE PÁGINA
+=================================================== */
 footer {
-  background-color: var(--firefly);
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #666;
+  background-color: var(--firefly); /* Fondo igual al body */
+  text-align: center;               /* Texto centrado */
+  padding: 1rem;                    /* Espacio interno */
+  font-size: 0.9rem;                /* Texto pequeño */
+  color: #666;                      /* Gris tenue para sutileza */
 }
