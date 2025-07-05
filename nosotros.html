@@ -31,60 +31,121 @@
     <a href="Comunidad.html">Comunidad</a>
     <button class="btn-login">Login | Register</button>
   </nav>
-</header>
 
-  <!-- Hero -->
-  <section class="hero-nosotros">
-    <h1>Conoce a AltusPlay</h1>
-    <p>La historia, propósito y el equipo detrás de la innovación deportiva</p>
-  </section>
+font-family: 'Segoe UI', sans-serif;
+      background-color: #0a0f1a;
+      color: #ffffff;
+      padding: 40px 20px;
+    }
 
-  <!-- Misión y Visión -->
-  <section class="mision-vision">
-    <div class="mision">
-      <h2>Misión</h2>
-      <p2>Potenciar la experiencia deportiva de millones de personas mediante inteligencia tecnológica accesible, personalizada y divertida.</p2>
-    </div>
-    <div class="vision">
-      <h2>Visión</h2>
-      <p2>Ser el ecosistema deportivo digital más influyente de Latinoamérica, combinando innovación, comunidad y rendimiento.</p2>
-    </div>
-  </section>
+    .sobre-nosotros {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
 
-  <!-- Historia -->
-  <section class="historia">
-    <h2>Nuestra historia</h2>
-    <p>
-      AltusPlay nació como una solución digital para quienes querían entrenar y competir mejor, sin ser necesariamente atletas profesionales.
-      Con el tiempo, evolucionamos hacia un ecosistema completo que conecta datos, análisis, clubes, entrenadores y experiencias deportivas en una misma plataforma.
-      Hoy impactamos localmente con tecnología en clubes reales, y nos proyectamos a nivel global como referentes del deporte inteligente.
-    </p>
-  </section>
+    .sobre-texto {
+      flex: 1 1 500px;
+    }
 
-  <!-- Equipo fundador -->
-  <section class="equipo">
-    <h2>Equipo fundador</h2>
-    <div class="tarjetas-equipo">
-      <div class="miembro">
-        <img src="anderson.jpg" alt="Foto de Anderson" />
-        <h3>Jhon Anderson Arango</h3>
-        <p>Co-Fundador & Director de Innovación</p>
+    .sobre-texto h2 {
+      color: #0cbdd5;
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+
+    .sobre-texto p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      color: #e0dcdc;
+      margin-bottom: 40px;
+    }
+
+    .caracteristicas {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .caracteristica {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.2rem;
+      color: #0cbdd5;
+    }
+
+    .caracteristica i {
+      font-size: 1.5rem;
+    }
+
+    .sobre-imagenes {
+      flex: 1 1 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .sobre-imagenes img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .sobre-nosotros {
+        flex-direction: column;
+      }
+
+      .sobre-texto h2 {
+        font-size: 2.2rem;
+      }
+
+      .sobre-texto p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+
+  <!-- Íconos de Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="sobre-nosotros">
+    <div class="sobre-texto">
+      <h2>Sobre nosotros</h2>
+      <p>
+        Con nuestra innovadora plataforma, estamos redefiniendo la práctica de deportes de raqueta,
+        integrando tecnología y análisis de datos para mejorar la experiencia de cada jugador.
+      </p>
+
+      <div class="caracteristicas">
+        <div class="caracteristica"><i class="fas fa-lightbulb"></i> Innovación</div>
+        <div class="caracteristica"><i class="fas fa-mouse"></i> Tecnología</div>
+        <div class="caracteristica"><i class="fas fa-chart-bar"></i> Análisis</div>
       </div>
-      <div class="miembro">
-        <img src="socio.jpg" alt="Foto del socio" />
-        <h3>[Nombre del socio]</h3>
-        <p>Co-Fundador & Director Técnico</p>
-      </div>
+    </div>
+
+    <div class="sobre-imagenes">
+      <img src="https://cdn.pixabay.com/photo/2017/08/06/00/15/ping-pong-2584282_1280.jpg" alt="Jugador de ping pong">
+      <img src="https://cdn-icons-png.flaticon.com/512/7475/7475821.png" alt="Laptop con análisis de datos" style="max-width: 300px;">
     </div>
   </section>
+  
+  <!-- SECCION FOOTER --> <!-- SECCION FOOTER --> <!-- SECCION FOOTER -->
 
   <section class="contenido"> <!-- Sección de contenido informativo -->
     <div class="col"> <!-- Primera columna: Qué es AltusPlay -->
-      <h3>¿Qué es ALTUSPLAY?</h3> <!-- Título de la sección -->
+      <h3>GENERAL</h3> <!-- Título de la sección -->
       <p>Una plataforma deportiva pensada para ti, donde la inteligencia deportiva se convierte en tu aliado.</p> <!-- Descripción -->
     </div>
     <div class="col"> <!-- Segunda columna: Beneficios y servicios -->
-      <h3>Beneficios y servicios</h3> <!-- Título de la sección -->
+      <h3>LEGAL</h3> <!-- Título de la sección -->
       <ul> <!-- Lista de beneficios -->
         <li>Análisis deportivo en tiempo real</li> <!-- Item 1 -->
         <li>Soporte personalizado</li> <!-- Item 2 -->
@@ -92,7 +153,7 @@
       </ul>
     </div>
     <div class="col"> <!-- Tercera columna: Tecnología -->
-      <h3>Tecnología</h3> <!-- Título de la sección -->
+      <h3>CONTACTANOS</h3> <!-- Título de la sección -->
       <p>Integración con cámaras, tablets, pantallas inteligentes y más.</p> <!-- Descripción -->
     </div>
   </section>
