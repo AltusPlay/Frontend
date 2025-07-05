@@ -60,10 +60,24 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 });
 
 // Funcionalidad para flip card
-<script>
   document.querySelectorAll('.flip-card').forEach(card => {
     card.addEventListener('click', () => {
       card.classList.toggle('flipped');
     });
   });
-</script>
+  
+// ✅ Funcionalidad para selección de fecha (sección reservas)
+  document.querySelectorAll(".fechas button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".fechas button").forEach(b => b.classList.remove("activo"));
+      btn.classList.add("activo");
+    });
+  });
+});
+
+// Cierra el menú en mobile al hacer clic en un link
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.querySelector(".nav-links").classList.remove("active");
+  });
+});
