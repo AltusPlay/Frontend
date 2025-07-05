@@ -32,30 +32,24 @@ body {
 }
 
 /* ============================================
-   ENCABEZADO
+   ENCABEZADO BARRA DE NAVEGACION
 ============================================ */
 header {
-  display: flex; /* Distribución horizontal */
-  justify-content: space-between; /* Espacio entre logo y menú */
-  align-items: center;
-  padding: 0.1rem 2rem; /* Espaciado interno */
-  background-color: var(--firefly); /* Fondo igual al body */
-  position: sticky; /* Fijo al hacer scroll */
-  top: 0;
-  z-index: 1000; /* Siempre encima */
+  display: flex; /* Activa modelo de caja flexible (flexbox) */
+  justify-content: space-between; /* Separa el logo y los enlaces a los extremos */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 0.1rem 2rem; /* Espaciado interno: superior/inferior y laterales */
+  background-color: var(--firefly); /* Color de fondo oscuro (coherente con la página) */
+  position: sticky; /* Fija el header arriba al hacer scroll */
+  top: 0; /* Lo mantiene pegado al borde superior */
+  z-index: 1000; /* Se asegura de que quede por encima de otros elementos */
 }
 
-nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
+/* Contenedor del logo (imagen + texto ALTUSPLAY) */
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; /* Separación entre imagen y texto */
+  display: flex; /* Alineación horizontal */
+  align-items: center; /* Centrado vertical */
+  gap: 0.5rem; /* Espacio entre imagen y texto */
 }
 
 .logo img {
@@ -63,8 +57,46 @@ nav a {
 }
 
 .logo h1 {
-  color: var(--white); /* Texto blanco */
+  margin: 0; /* Elimina margen por defecto */
 }
+
+.logo h1 a {
+  color: var(--white); /* Texto blanco */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1.5rem; /* Tamaño grande para título */
+  font-weight: bold; /* Negrita */
+}
+
+/* Contenedor de enlaces de navegación */
+.nav-links {
+  display: flex; /* Alineación horizontal de los enlaces */
+  align-items: center; /* Centrado vertical */
+  gap: 1rem; /* Espacio entre enlaces */
+}
+
+/* Estilo para cada enlace de navegación */
+.nav-links a {
+  color: var(--white); /* Enlaces blancos */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Botón de inicio de sesión / registro */
+.btn-login {
+  background-color: var(--cerulean); /* Fondo azul vibrante */
+  border: none; /* Sin borde */
+  padding: 0.5rem 1rem; /* Relleno interno */
+  color: white; /* Texto blanco */
+  border-radius: 20px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor en forma de mano */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Botón hamburguesa oculto por defecto (se activa en móvil) */
+.menu-toggle {
+  display: none; /* Oculto en escritorio */
+}
+
 
 /* ============================================
    BOTÓN LOGIN
