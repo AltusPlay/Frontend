@@ -236,6 +236,7 @@ footer {
   font-size: 2.5rem;
   color: var(--cerulean);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .contenedor-beneficios {
@@ -290,7 +291,7 @@ footer {
   line-height: 1.4;
 }
 
-/* SECCIÓN SERVICIOS */
+/* SECCIÓN SOLUCIONES */
 body {
   background-color: #0d1b2a;
   font-family: 'Segoe UI', sans-serif;
@@ -367,6 +368,17 @@ body {
   line-height: 1.5;
 }
 
+.seccion-soluciones {
+  padding: 4rem 2rem;
+  background-color: var(--firefly);
+}
+
+.seccion-soluciones .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
 /* Animación */
 @keyframes fadeInUp {
