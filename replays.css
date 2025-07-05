@@ -1,0 +1,115 @@
+:root {
+  /* 🌊 Tonos Azules Principales */
+  --cerulean:         #0cbdd5;  /* Azul cerúleo */
+  --matisse:          #2474ae;  /* Azul matisse */
+  --half-baked:       #0a97a8;  /* Azul pastel */
+  --blue-zodiac:      #0e4c85;  /* Azul profundo */
+  --blue-zodiac-dark: #0f2747;  /* Azul muy oscuro */
+
+  /* 🌑 Fondos Oscuros */
+  --firefly:          #09141d;  /* Azul verdoso muy oscuro */
+
+  /* 🎨 Neutros y Grises */
+  --bon-jour:         #e0dcdc;  /* Gris claro elegante */
+  --geyser:           #d9e0e3;  /* Gris azulado claro */
+  --abbey:            #4c4f53;  /* Gris oscuro */
+
+  /* ⚪️ Blanco puro */
+  --white:            #ffffff;  /* Blanco puro */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--firefly);
+  color: var(--bon-jour);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 2rem;
+  background-color: var(--firefly);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.seccion-replays {
+  background-color: var(--firefly);
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.subtitulo-seccion {
+  font-size: 1.1rem;
+  color: var(--bon-jour);
+  margin-bottom: 3rem;
+}
+
+.mockups-replay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.mockup-movil {
+  background-color: var(--blue-zodiac-dark);
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 240px;
+  box-shadow: 0 0 15px rgba(12, 189, 213, 0.1);
+}
+
+.perfil-user {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--cerulean);
+}
+
+.video-preview {
+  background-color: var(--blue-zodiac);
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.video-preview img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.replay-titulo {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--white);
+  margin-bottom: 0.2rem;
+}
+
+.replay-hora {
+  font-size: 0.9rem;
+  color: var(--geyser);
+}
+
+.mockup-tablet {
+  background-color: var(--blue-zodiac-dark);
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 400px;
+  max-width: 90vw;
+  box-shadow: 0 0 15px rgba(12, 189, 213, 0.1);
+}
+
+.video-player video {
+  width: 100%;
+  border-radius: 12px;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
