@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- Indica que este es un documento HTML5 -->
+<html lang="es"> <!-- Define el idioma como español -->
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptabilidad en móviles -->
+  <title>AltusPlay | Más que jugar</title> <!-- Título de la página que aparece en el navegador -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> <!-- Fuente Inter desde Google Fonts -->
+  </head>
+  
+<header>
+  <div class="logo">
+    <img src="Logo2.png" alt="Logo AltusPlay">
+    <h1><a href="index.html">ALTUSPLAY</a></h1>
+  </div>
+
+  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+  <nav class="nav-links">
+    <a href="nosotros.html">Nosotros</a>
+    <a href="#Soluciones">Soluciones</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="replays.html">Mi Replays</a>
+    <a href="planes.html">planes</a>
+    <a href="Comunidad.html">Comunidad</a>
+    <button class="btn-login">Login | Register</button>
+  </nav>
+</header>
+
+<section class="seccion-comunidad" id="comunidad">
+  <h2 class="titulo-seccion">Comunidad</h2>
+  <p class="subtitulo-seccion">Conéctate con otros jugadores, comparte repeticiones y consigue logros.</p>
+
+  <div class="contenedor-comunidad">
+
+    <!-- Actividad izquierda -->
+    <div class="actividad-usuario">
+      <div class="card-actividad">
+        <div class="usuario">
+          <img src="assets/avatar-sergio.png" alt="Sergio">
+          <strong>Sergio A.</strong>
+        </div>
+        <p>ha compartido una repetición</p>
+        <img src="assets/replay-thumb.png" alt="Replay compartido" class="preview-replay">
+        <div class="likes">👍 32</div>
+      </div>
+
+      <div class="card-actividad">
+        <div class="usuario">
+          <img src="assets/avatar-pedro.png" alt="Pedro">
+          <strong>Pedro L.</strong>
+        </div>
+        <p>ha desbloqueado un logro</p>
+        <div class="icono-logro">🏆 <span>Principiante</span></div>
+      </div>
+    </div>
+
+    <!-- Ranking derecha -->
+    <div class="ranking-comunidad">
+      <h3>Ranking semanal</h3>
+      <ul class="ranking-lista">
+        <li><img src="assets/avatar-julia.png"> Julia O. <span>1.530</span></li>
+        <li><img src="assets/avatar-roberto.png"> Roberto D. <span>1.420</span></li>
+        <li><img src="assets/avatar-laura.png"> Laura G. <span>1.330</span></li>
+        <li><img src="assets/avatar-david.png"> David M. <span>1.260</span></li>
+        <li><img src="assets/avatar-laura2.png"> Laura R. <span>1.190</span></li>
+      </ul>
+      <button class="btn-comunidad">Unirme a la comunidad</button>
+    </div>
+  </div>
+
+  <!-- Mockup adicional -->
+  <div class="mockup-global">
+    <h3>Clasificación global</h3>
+    <ul class="ranking-global">
+      <li>🥇 Alexandra M. <span>1.480 p</span></li>
+      <li>🥈 Carlos T. <span>1.340 p</span></li>
+      <li>🥉 Sebastián R. <span>1.330 p</span></li>
+      <li>Laura G. <span>1.270 p</span></li>
+    </ul>
+  </div>
+</section>
