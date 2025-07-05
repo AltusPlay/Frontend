@@ -58,3 +58,12 @@ document.querySelectorAll(".nav-links a").forEach(link => {
     document.querySelector(".nav-links").classList.remove("active");
   });
 });
+
+// Funcionalidad para flip card
+<script>
+  document.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+    });
+  });
+</script>
