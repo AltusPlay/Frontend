@@ -1,3 +1,5 @@
+//console.log("Script cargado correctamente ✅"); COMANDO PARA PROBAR QUE FUNCIONA EL SCRIPT
+
 // ===========================================
 // ALTUSPLAY - script.js con comentarios
 // ===========================================

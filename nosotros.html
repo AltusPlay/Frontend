@@ -4,6 +4,7 @@
   <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala adaptativa para móviles -->
   <title>Nosotros | AltusPlay</title> <!-- Título de la pestaña -->
+  <link rel="stylesheet" href="styles.css" />       <!-- Estilos base (barra de navegación, etc.) -->
   <link rel="stylesheet" href="styles_nosotros.css"> <!-- Hoja de estilos específica de esta página -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> <!-- Fuente Google Fonts -->
 </head>
@@ -15,8 +16,10 @@
       <img src="Logo2.png" alt="Logo AltusPlay"> <!-- Imagen del logo -->
       <h1><a href="index.html">ALTUSPLAY</a></h1> <!-- Enlace al inicio -->
     </div>
+	
     <button class="menu-toggle" aria-label="Abrir menú">☰</button> <!-- Botón hamburguesa -->
-    <div class="nav-links"> <!-- Contenedor de enlaces del menú -->
+    
+	<div class="nav-links"> <!-- Contenedor de enlaces del menú -->
       <a href="index.html#Servicios">Servicios</a>
       <a href="index.html#Beneficios">Beneficios</a>
       <a href="index.html#reservas">Reservas</a>
@@ -35,24 +38,31 @@
       <p>Más que tecnología, somos pasión por el deporte y por quienes lo viven a su manera.</p> <!-- Subtítulo -->
     </div>
   </section>
-
-  <!-- ========== SECCIÓN HISTORIA - MISIÓN - VISIÓN ========== -->
-  <section class="contenido"> <!-- Bloque informativo con tres columnas -->
-    <div class="col"> <!-- Columna historia -->
-      <h3>Nuestra historia</h3>
-      <p>AltusPlay nace de la necesidad de unir tecnología y deporte en un solo espacio accesible, inmersivo y motivador. Queríamos una forma de entrenar mejor, no más duro, con información real y herramientas que antes solo tenían los profesionales.</p>
+  
+  <!-- ========== SECCIÓN MISIÓN - VISIÓN ========== -->
+  <section class="mision-vision">
+    <div class="mision">
+      <h2>Misión</h2>
+      <p2>Potenciar la experiencia deportiva de millones de personas mediante inteligencia tecnológica accesible, personalizada y divertida.</p2>
     </div>
-    <div class="col"> <!-- Columna misión -->
-      <h3>Misión</h3>
-      <p>Democratizar el acceso a la tecnología deportiva, creando una comunidad donde cualquier persona pueda superarse cada día sin importar su nivel.</p>
-    </div>
-    <div class="col"> <!-- Columna visión -->
-      <h3>Visión</h3>
-      <p>Ser la plataforma tecnológica líder en deporte inteligente en Latinoamérica, integrando datos, análisis y comunidad en una experiencia unificada.</p>
+    <div class="vision">
+      <h2>Visión</h2>
+      <p2>Ser el ecosistema deportivo digital más influyente de Latinoamérica, combinando innovación, comunidad y rendimiento.</p2>
     </div>
   </section>
+  
+    <!-- ========== SECCIÓN HISTORIA ========== -->
+  
+  <section class="historia">
+    <h2>Nuestra historia</h2>
+    <p>
+      AltusPlay nació como una solución digital para quienes querían entrenar y competir mejor, sin ser necesariamente atletas profesionales.
+      Con el tiempo, evolucionamos hacia un ecosistema completo que conecta datos, análisis, clubes, entrenadores y experiencias deportivas en una misma plataforma.
+      Hoy impactamos localmente con tecnología en clubes reales, y nos proyectamos a nivel global como referentes del deporte inteligente.
+    </p>
+  </section>
 
-  <!-- ========== SECCIÓN VALORES Y DIFERENCIAL ========== -->
+   <!-- ========== SECCIÓN VALORES Y DIFERENCIAL ========== -->
   <section class="contenido"> <!-- Segunda fila informativa -->
     <div class="col"> <!-- Columna valores -->
       <h3>Valores</h3>
@@ -68,8 +78,45 @@
       <p>Porque creemos que todos pueden jugar mejor con las herramientas adecuadas. Y queremos ponerlas en tus manos.</p>
     </div>
   </section>
+  
+   <!-- ========== SECCIÓN EQUIPO FUNDADOR ========== -->
+   
+   <section class="equipo">
+    <h2>Equipo fundador</h2>
+    <div class="tarjetas-equipo">
+      <div class="miembro">
+        <img src="anderson.jpg" alt="Foto de Anderson" />
+        <h3>Jhon Anderson Arango</h3>
+        <p>Co-Fundador & Director de Innovación</p>
+      </div>
+      <div class="miembro">
+        <img src="socio.jpg" alt="Foto del socio" />
+        <h3>[Nombre del socio]</h3>
+        <p>Co-Fundador & Director Técnico</p>
+      </div>
+    </div>
+  </section>
 
   <!-- ========== PIE DE PÁGINA ========== -->
+  <section class="contenido"> <!-- Sección de contenido informativo -->
+    <div class="col"> <!-- Primera columna: Qué es AltusPlay -->
+      <h3>¿Qué es ALTUSPLAY?</h3> <!-- Título de la sección -->
+      <p>Una plataforma deportiva pensada para ti, donde la inteligencia deportiva se convierte en tu aliado.</p> <!-- Descripción -->
+    </div>
+    <div class="col"> <!-- Segunda columna: Beneficios y servicios -->
+      <h3>Beneficios y servicios</h3> <!-- Título de la sección -->
+      <ul> <!-- Lista de beneficios -->
+        <li>Análisis deportivo en tiempo real</li> <!-- Item 1 -->
+        <li>Soporte personalizado</li> <!-- Item 2 -->
+        <li>Repeticiones automáticas</li> <!-- Item 3 -->
+      </ul>
+    </div>
+    <div class="col"> <!-- Tercera columna: Tecnología -->
+      <h3>Tecnología</h3> <!-- Título de la sección -->
+      <p>Integración con cámaras, tablets, pantallas inteligentes y más.</p> <!-- Descripción -->
+    </div>
+  </section>
+  
   <footer> <!-- Sección final de la página -->
     <p>&copy; 2025 ALTUSPLAY - Todos los derechos reservados</p> <!-- Derechos -->
   </footer>
