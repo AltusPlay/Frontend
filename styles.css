@@ -331,55 +331,67 @@ footer {
   color: #666;
 }
 
-/* ============================================
-   RESPONSIVE: MENÃš HAMBURGUESA
-============================================ */
+/* ===================================================
+   MEN¨² HAMBURGUESA RESPONSIVE
+   Aparece en pantallas peque?as y oculta el men¨² hasta hacer clic
+=================================================== */
+
+/* Bot¨®n ? oculto en escritorio */
 .menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
+  display: none;               /* No se muestra en pantallas grandes */
+  background: none;            /* Sin color de fondo */
+  border: none;                /* Sin bordes */
+  color: white;                /* Color del ¨ªcono ? */
+  font-size: 2rem;             /* Tama?o grande para visibilidad */
+  cursor: pointer;            /* Cambia el cursor a mano */
 }
 
-@media (max-width: 1400px) {
+/* Reglas aplicadas solo en pantallas peque?as (tablets y celulares) */
+@media (max-width: 768px) {
+
+  /* Bot¨®n ? se muestra solo en pantallas peque?as */
   .menu-toggle {
-    display: block;
-	background: none;
-    border: none;
-    font-size: 2rem;
-    color: var(--white);
-    cursor: pointer;
+    display: block;            /* Se hace visible */
+    background: none;          /* Fondo transparente */
+    border: none;              /* Sin bordes */
+    font-size: 2rem;           /* ¨ªcono grande */
+    color: var(--white);       /* Color blanco definido en la paleta */
+    cursor: pointer;           /* Cursor tipo mano al pasar encima */
   }
 
+  /* Contenedor de enlaces del men¨² */
   .nav-links {
-    max-height: 0;
-    overflow: hidden;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--firefly);
-    padding: 0 2rem;
-    transition: max-height 0.4s ease, padding 0.3s ease;
+    flex-direction: column;    /* Cambia de horizontal a vertical */
+    width: 100%;               /* Ocupar todo el ancho */
+    background-color: var(--firefly); /* Fondo oscuro */
+    max-height: 0;             /* Oculto inicialmente */
+    overflow: hidden;          /* Oculta contenido cuando est¨¢ colapsado */
+    padding: 0 2rem;           /* Solo padding horizontal al inicio */
+    transition: max-height 0.4s ease, padding 0.3s ease; /* Animaci¨®n suave */
   }
 
+  /* Cuando se hace clic en ?, se agrega la clase .active */
   .nav-links.active {
-    max-height: 500px;
-    padding: 1rem 2rem;
+    max-height: 500px;         /* Expande el men¨² para mostrar enlaces */
+    padding: 1rem 2rem;        /* Agrega padding vertical al abrir */
   }
 
+  /* Cada enlace y el bot¨®n login en vista m¨®vil */
   .nav-links a,
   .btn-login {
-    margin: 0.5rem 0;
-    display: block;
+    margin: 0.5rem 0;          /* Espacio vertical entre elementos */
+    display: block;            /* Uno debajo del otro */
+    text-align: center;        /* Alineado al centro */
   }
 
+  /* Permitir que el header se divida en varias filas si es necesario */
   header {
-    flex-wrap: wrap;
+    flex-wrap: wrap;           /* Elementos pueden saltar de l¨ªnea */
   }
 
+  /* Ajustar tama?o del t¨ªtulo para pantallas peque?as */
   .logo h1 {
-    font-size: 1.2rem;
+    font-size: 1.2rem;         /* M¨¢s peque?o para que quepa mejor */
   }
 }
 
