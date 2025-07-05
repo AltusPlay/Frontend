@@ -32,7 +32,7 @@ body {
 }
 
 /* ===================================================
-   ENCABEZADO ESTÁNDAR
+   ENCABEZADO BARRA DE NAVEGACION
 =================================================== */
 header {
   display: flex;                     /* Activa Flexbox horizontal */
@@ -43,6 +43,49 @@ header {
   position: sticky;                 /* Fijo arriba al hacer scroll */
   top: 0;                           /* Pegado arriba */
   z-index: 1000;                    /* Superposición alta */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo h1 a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-login {
+  background-color: var(--cerulean);
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
 }
 
 /* ===================================================
@@ -181,4 +224,45 @@ footer {
   padding: 1rem;                    /* Espacio interno */
   font-size: 0.9rem;                /* Texto pequeño */
   color: #666;                      /* Gris tenue para sutileza */
+}
+
+
+
+/* ===================================================
+   MENU HAMBURGUESA
+=================================================== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    background-color: var(--firefly);
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .nav-links.active {
+    max-height: 300px;
+    padding: 1rem 0;
+  }
+
+  .nav-links a,
+  .btn-login {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
 }
