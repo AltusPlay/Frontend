@@ -35,68 +35,67 @@ body {
    ENCABEZADO BARRA DE NAVEGACION
 ============================================ */
 header {
-  display: flex; /* Activa modelo de caja flexible (flexbox) */
-  justify-content: space-between; /* Separa el logo y los enlaces a los extremos */
-  align-items: center; /* Centra verticalmente los elementos */
-  padding: 0.1rem 2rem; /* Espaciado interno: superior/inferior y laterales */
-  background-color: var(--firefly); /* Color de fondo oscuro (coherente con la p谩gina) */
-  position: sticky; /* Fija el header arriba al hacer scroll */
-  top: 0; /* Lo mantiene pegado al borde superior */
-  z-index: 1000; /* Se asegura de que quede por encima de otros elementos */
+  display: flex;  /* Layout horizontal */
+  justify-content: space-between;  /* Separación entre logo y menú */
+  align-items: center;  /* Centrado vertical */
+  padding: 0.1rem 2rem;  /* Relleno interior */
+  background-color: var(--firefly);  /* Fondo coherente con el body */
+  position: sticky;  /* Se fija al hacer scroll */
+  top: 0;
+  z-index: 1000;  /* Se mantiene visible */
 }
 
-/* Contenedor del logo (imagen + texto ALTUSPLAY) */
 .logo {
-  display: flex; /* Alineaci贸n horizontal */
-  align-items: center; /* Centrado vertical */
-  gap: 0.5rem; /* Espacio entre imagen y texto */
+  display: flex;  /* Elementos en fila */
+  align-items: center;
+  gap: 0.5rem;  /* Espacio entre imagen y texto */
 }
 
 .logo img {
-  height: 50px; /* Altura del logo */
+  height: 50px;  /* Tama?o del logo */
 }
 
 .logo h1 {
-  margin: 0; /* Elimina margen por defecto */
+  margin: 0;
+  font-size: 1.5rem;  /* Tama?o del nombre ALTUSPLAY */
 }
 
 .logo h1 a {
-  color: var(--white); /* Texto blanco */
-  text-decoration: none; /* Sin subrayado */
-  font-size: 1.5rem; /* Tama帽o grande para t铆tulo */
-  font-weight: bold; /* Negrita */
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Contenedor de enlaces de navegaci贸n */
 .nav-links {
-  display: flex; /* Alineaci贸n horizontal de los enlaces */
-  align-items: center; /* Centrado vertical */
-  gap: 1rem; /* Espacio entre enlaces */
+  display: flex;  /* Enlaces en fila */
+  align-items: center;
+  gap: 1rem;  /* Espacio entre enlaces */
 }
 
-/* Estilo para cada enlace de navegaci贸n */
 .nav-links a {
-  color: var(--white); /* Enlaces blancos */
-  text-decoration: none; /* Sin subrayado */
-  font-weight: bold; /* Texto en negrita */
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Bot贸n de inicio de sesi贸n / registro */
 .btn-login {
-  background-color: var(--cerulean); /* Fondo azul vibrante */
-  border: none; /* Sin borde */
-  padding: 0.5rem 1rem; /* Relleno interno */
-  color: white; /* Texto blanco */
-  border-radius: 20px; /* Bordes redondeados */
-  cursor: pointer; /* Cursor en forma de mano */
-  font-weight: bold; /* Texto en negrita */
+  background-color: var(--cerulean);  /* Botón azul vibrante */
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 20px;  /* Bordes redondeados */
+  cursor: pointer;
+  font-weight: bold;
 }
 
-/* Bot贸n hamburguesa oculto por defecto (se activa en m贸vil) */
 .menu-toggle {
-  display: none; /* Oculto en escritorio */
+  display: none;  /* Solo aparece en móvil */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
 }
-
 
 /* ============================================
    BOT脫N LOGIN
@@ -133,9 +132,9 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Rellena el contenedor sin distorsionar */
+  object-fit: cover;  /* Rellena el área sin deformar */
   z-index: 0;
-  opacity: 0.6;
+  opacity: 0.6;  /* Permite que el contenido se vea encima */
 }
 
 .hero-content {
@@ -257,14 +256,14 @@ header {
    SECCION DE BENEFICIOS
 ============================================ */
 .seccion-beneficios {
-  background-color: var(--firefly);
+  background-color: var(--firefly);  /* Fondo oscuro como el body */
   padding: 4rem 2rem;
   text-align: center;
 }
 
 .titulo-seccion {
   font-size: 2.5rem;
-  color: var(--cerulean);
+  color: var(--cerulean);  /* Color azul vibrante para título */
   margin-bottom: 2rem;
 }
 
@@ -336,68 +335,54 @@ footer {
    Aparece en pantallas peque?as y oculta el menú hasta hacer clic
 =================================================== */
 
-/* Botón ? oculto en escritorio */
-.menu-toggle {
-  display: none;               /* No se muestra en pantallas grandes */
-  background: none;            /* Sin color de fondo */
-  border: none;                /* Sin bordes */
-  color: white;                /* Color del ícono ? */
-  font-size: 2rem;             /* Tama?o grande para visibilidad */
-  cursor: pointer;            /* Cambia el cursor a mano */
-}
-
-/* Reglas aplicadas solo en pantallas peque?as (tablets y celulares) */
 @media (max-width: 768px) {
-
-  /* Botón ? se muestra solo en pantallas peque?as */
   .menu-toggle {
-    display: block;            /* Se hace visible */
-    background: none;          /* Fondo transparente */
-    border: none;              /* Sin bordes */
-    font-size: 2rem;           /* ícono grande */
-    color: var(--white);       /* Color blanco definido en la paleta */
-    cursor: pointer;           /* Cursor tipo mano al pasar encima */
+    display: block;  /* Se muestra en móviles */
   }
 
-  /* Contenedor de enlaces del menú */
   .nav-links {
-    flex-direction: column;    /* Cambia de horizontal a vertical */
-    width: 100%;               /* Ocupar todo el ancho */
-    background-color: var(--firefly); /* Fondo oscuro */
-    max-height: 0;             /* Oculto inicialmente */
-    overflow: hidden;          /* Oculta contenido cuando está colapsado */
-    padding: 0 2rem;           /* Solo padding horizontal al inicio */
-    transition: max-height 0.4s ease, padding 0.3s ease; /* Animación suave */
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--firefly);
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 2rem;
+    transition: max-height 0.4s ease, padding 0.3s ease;
   }
 
-  /* Cuando se hace clic en ?, se agrega la clase .active */
   .nav-links.active {
-    max-height: 500px;         /* Expande el menú para mostrar enlaces */
-    padding: 1rem 2rem;        /* Agrega padding vertical al abrir */
+    max-height: 500px;
+    padding: 1rem 2rem;
   }
 
-  /* Cada enlace y el botón login en vista móvil */
   .nav-links a,
   .btn-login {
-    margin: 0.5rem 0;          /* Espacio vertical entre elementos */
-    display: block;            /* Uno debajo del otro */
-    text-align: center;        /* Alineado al centro */
+    margin: 0.5rem 0;
+    display: block;
+    text-align: center;
   }
 
-  /* Permitir que el header se divida en varias filas si es necesario */
   header {
-    flex-wrap: wrap;           /* Elementos pueden saltar de línea */
+    flex-wrap: wrap;
   }
 
-  /* Ajustar tama?o del título para pantallas peque?as */
   .logo h1 {
-    font-size: 1.2rem;         /* Más peque?o para que quepa mejor */
+    font-size: 1.2rem;
+  }
+
+  .seccion-cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 90%;
   }
 }
 
-/* ============================================
-   ADAPTACI脫N M脫VIL PEQUE脩O
-============================================ */
 @media (max-width: 480px) {
   .logo h1 {
     font-size: 1.4rem;
@@ -433,105 +418,5 @@ footer {
     text-align: center;
     font-size: 1.2rem;
     padding: 0.75rem 0;
-  }
-}
-
-/* ============================================
-   OTROS PARA ORGANIZAR
-============================================ */
-.contenido {
-  display: flex;
-  justify-content: space-around;
-  padding: 4rem 2rem;
-  flex-wrap: wrap;
-  background-color: var(--firefly);
-}
-
-.col {
-  width: 300px;
-  margin: 1rem;
-}
-
-/* Animaci贸n */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-}
-.nav-links a,
-.nav-links a:visited,
-.nav-links a:focus,
-.nav-links a:active {
-  color: var(--white);  /* o var(--bon-jour) si quieres gris claro */
-  text-decoration: none;
-}
-.logo h1 a,
-.logo h1 a:visited,
-.logo h1 a:focus,
-.logo h1 a:active {
-  color: var(--white);       /* o var(--cerulean) si quieres mantenerlo azul claro */
-  text-decoration: none;     /* sin subrayado */
-}
-.beneficio {
-  opacity: 1 !important;
-  transform: none !important;
-}
-/* ============================================
-   RESPONSIVE DESTACADOS (PANTALLAS GRANDES)
-============================================ */
-@media (min-width: 769px) {
-  .seccion-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 4rem 2rem;
-  }
-
-  .card {
-    max-width: 300px;
-    flex: 1 1 300px;
-  }
-}
-
-/* ============================================
-   RESPONSIVE DESTACADOS (PANTALLAS PEQUE脩AS)
-============================================ */
-@media (max-width: 768px) {
-  .seccion-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
-    gap: 2rem;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 90%;
   }
 }
