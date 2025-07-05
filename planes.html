@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- Indica que este es un documento HTML5 -->
+<html lang="es"> <!-- Define el idioma como español -->
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptabilidad en móviles -->
+  <title>AltusPlay | Más que jugar</title> <!-- Título de la página que aparece en el navegador -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> <!-- Fuente Inter desde Google Fonts -->
+  </head>
+  
+<header>
+  <div class="logo">
+    <img src="Logo2.png" alt="Logo AltusPlay">
+    <h1><a href="index.html">ALTUSPLAY</a></h1>
+  </div>
+
+  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+  <nav class="nav-links">
+    <a href="nosotros.html">Nosotros</a>
+    <a href="#Soluciones">Soluciones</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="replays.html">Mi Replays</a>
+    <a href="#planes">planes</a>
+    <a href="Comunidad.html">Comunidad</a>
+    <button class="btn-login">Login | Register</button>
+  </nav>
+</header>
+
+<section class="seccion-precios" id="precios">
+  <h2 class="titulo-seccion">Planes</h2>
+  <div class="contenedor-planes">
+    
+    <!-- Invitado -->
+    <div class="plan">
+      <h3>Invitado</h3>
+      <p class="subtitulo">Pago por uso</p>
+      <p class="precio">Variable</p>
+      <ul>
+        <li>Acceso puntual</li>
+        <li>Corrección de repeticiones</li>
+      </ul>
+      <button class="btn-plan">Comenzar</button>
+    </div>
+
+    <!-- Suscriptor -->
+    <div class="plan destacado">
+      <h3>Suscriptor</h3>
+      <p class="subtitulo">Plan mensual</p>
+      <p class="precio">$19 <span>/ mes</span></p>
+      <ul>
+        <li>Reservas ilimitadas</li>
+        <li>Entrenador personal</li>
+        <li>Análisis detallado</li>
+      </ul>
+      <button class="btn-plan suscribir">Suscribirse</button>
+    </div>
+
+    <!-- Entrenador -->
+    <div class="plan">
+      <h3>Entrenador</h3>
+      <p class="subtitulo">Gestión de alumnos</p>
+      <p class="precio">$29 <span>/ mes</span></p>
+      <ul>
+        <li>Administración de alumnos</li>
+        <li>Visualización de juego</li>
+      </ul>
+      <button class="btn-plan">Comenzar</button>
+    </div>
+
+    <!-- Empresa -->
+    <div class="plan">
+      <h3>Empresa</h3>
+      <p class="subtitulo">Bienestar corporativo</p>
+      <p class="precio">$49 <span>/ mes</span></p>
+      <ul>
+        <li>Reservas centralizadas</li>
+        <li>Comparativas e informes</li>
+      </ul>
+      <button class="btn-plan">Comenzar</button>
+    </div>
+
+  </div>
+</section>

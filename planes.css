@@ -1,0 +1,142 @@
+:root {
+  /* 🌊 Tonos Azules Principales */
+  --cerulean:         #0cbdd5;  /* Azul cerúleo */
+  --matisse:          #2474ae;  /* Azul matisse */
+  --half-baked:       #0a97a8;  /* Azul pastel */
+  --blue-zodiac:      #0e4c85;  /* Azul profundo */
+  --blue-zodiac-dark: #0f2747;  /* Azul muy oscuro */
+
+  /* 🌑 Fondos Oscuros */
+  --firefly:          #09141d;  /* Azul verdoso muy oscuro */
+
+  /* 🎨 Neutros y Grises */
+  --bon-jour:         #e0dcdc;  /* Gris claro elegante */
+  --geyser:           #d9e0e3;  /* Gris azulado claro */
+  --abbey:            #4c4f53;  /* Gris oscuro */
+
+  /* ⚪️ Blanco puro */
+  --white:            #ffffff;  /* Blanco puro */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--firefly);
+  color: var(--bon-jour);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 2rem;
+  background-color: var(--firefly);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.seccion-precios {
+  background-color: var(--firefly);
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.contenedor-planes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.plan {
+  background-color: var(--blue-zodiac-dark);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 260px;
+  flex: 1 1 240px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s;
+}
+
+.plan:hover {
+  transform: translateY(-6px);
+}
+
+.plan h3 {
+  font-size: 1.4rem;
+  color: var(--white);
+  margin-bottom: 0.2rem;
+}
+
+.plan .subtitulo {
+  color: var(--cerulean);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.plan .precio {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.plan .precio span {
+  font-size: 1rem;
+  color: var(--geyser);
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.plan ul li {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: var(--bon-jour);
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.plan ul li::before {
+  content: "•";
+  color: var(--cerulean);
+  position: absolute;
+  left: 0;
+}
+
+.btn-plan {
+  background-color: var(--cerulean);
+  color: var(--white);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-plan:hover {
+  background-color: var(--half-baked);
+}
+
+.destacado {
+  background-color: var(--blue-zodiac);
+  border: 2px solid var(--cerulean);
+}
+
+.destacado .btn-plan {
+  background-color: black;
+  color: var(--cerulean);
+}
+
+.destacado .btn-plan:hover {
+  background-color: var(--blue-zodiac-dark);
+}
