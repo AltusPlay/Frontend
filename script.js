@@ -1,73 +1,60 @@
-//console.log("Script cargado correctamente ✅"); COMANDO PARA PROBAR QUE FUNCIONA EL SCRIPT
+//console.log("Script cargado correctamente ✅");
 
-// ===========================================
-// ALTUSPLAY - script.js con comentarios
-// ===========================================
-
-// Esperar a que todo el contenido del DOM esté cargado
+// Funcionalidad para sliders (dots)
 document.addEventListener("DOMContentLoaded", function () {
-
-  // =======================================
-  // FUNCIONALIDAD DE SLIDERS AUTOMÁTICOS
-  // =======================================
   document.querySelectorAll(".dots").forEach(dotContainer => {
-    const sliderId = dotContainer.dataset.slider; // Obtiene el ID del slider relacionado
-    const slider = document.getElementById(sliderId); // Encuentra el contenedor de slides
-    const slides = slider.querySelectorAll(".slide"); // Todos los elementos con clase 'slide'
-    const dots = dotContainer.querySelectorAll(".dot"); // Los indicadores (dots)
+    const sliderId = dotContainer.dataset.slider;
+    const slider = document.getElementById(sliderId);
+    const slides = slider.querySelectorAll(".slide");
+    const dots = dotContainer.querySelectorAll(".dot");
 
-    let currentIndex = 0; // Índice actual
-    let interval; // Control del intervalo automático
+    let currentIndex = 0;
+    let interval;
 
     function showSlide(index) {
-      slides.forEach(s => s.classList.remove("active")); // Oculta todas las slides
-      dots.forEach(d => d.classList.remove("active")); // Desactiva todos los dots
-      slides[index].classList.add("active"); // Muestra la slide deseada
-      dots[index].classList.add("active"); // Activa el dot correspondiente
+      slides.forEach(s => s.classList.remove("active"));
+      dots.forEach(d => d.classList.remove("active"));
+      slides[index].classList.add("active");
+      dots[index].classList.add("active");
       currentIndex = index;
     }
 
     function startAutoSlide() {
       interval = setInterval(() => {
-        const nextIndex = (currentIndex + 1) % slides.length; // Va a la siguiente slide
+        const nextIndex = (currentIndex + 1) % slides.length;
         showSlide(nextIndex);
-      }, 5000); // Cada 5 segundos
+      }, 5000);
     }
 
     dots.forEach(dot => {
       dot.addEventListener("click", () => {
-        const index = parseInt(dot.dataset.index); // Obtener índice del dot
-        showSlide(index); // Mostrar la slide correspondiente
-        clearInterval(interval); // Reiniciar temporizador
-        startAutoSlide(); // Comenzar de nuevo el intervalo
+        const index = parseInt(dot.dataset.index);
+        showSlide(index);
+        clearInterval(interval);
+        startAutoSlide();
       });
     });
 
-    showSlide(0); // Muestra la primera slide al cargar
-    startAutoSlide(); // Inicia el ciclo automático
+    showSlide(0);
+    startAutoSlide();
   });
 
-  // =======================================
-  // MENÚ HAMBURGUESA - ACTIVACIÓN
-  // =======================================
-  const toggleBtn = document.querySelector(".menu-toggle"); // Botón ☰
-  const nav = document.querySelector(".nav-links"); // Menú de navegación
+  // Funcionalidad para menú hamburguesa
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav-links");
 
   if (toggleBtn && nav) {
     toggleBtn.addEventListener("click", () => {
-      nav.classList.toggle("active"); // Alterna visibilidad del menú
-      console.log("✅ Menú hamburguesa activado");
+      nav.classList.toggle("active");
+      console.log("Menú hamburguesa activado");
     });
   } else {
     console.warn("⚠️ Elementos del menú no encontrados.");
   }
 });
 
-// =======================================
-// CIERRE AUTOMÁTICO DEL MENÚ AL CLIC
-// =======================================
 document.querySelectorAll(".nav-links a").forEach(link => {
   link.addEventListener("click", () => {
-    document.querySelector(".nav-links").classList.remove("active"); // Cierra el menú móvil
+    document.querySelector(".nav-links").classList.remove("active");
   });
 });

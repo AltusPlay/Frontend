@@ -1,177 +1,189 @@
-<!DOCTYPE html> <!-- Declaración de documento HTML5 -->
-<html lang="es"> <!-- Idioma principal del contenido -->
+<!DOCTYPE html> <!-- Indica que este es un documento HTML5 -->
+<html lang="es"> <!-- Define el idioma como español -->
 <head>
-  <meta charset="UTF-8"> <!-- Codificación de caracteres -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escalado para móviles -->
-  <title>AltusPlay | Más que jugar</title> <!-- Título que aparece en la pestaña -->
+  <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptabilidad en móviles -->
+  <title>AltusPlay | Más que jugar</title> <!-- Título de la página que aparece en el navegador -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> <!-- Fuente personalizada -->
+  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> <!-- Fuente Inter desde Google Fonts -->
 </head>
-<body> <!-- Cuerpo del documento -->
+<body> <!-- Comienzo del cuerpo de la página -->
 
-  <!-- ========== ENCABEZADO DE NAVEGACIÓN ========== -->
-  <header> <!-- Contenedor del encabezado -->
-    <div class="logo"> <!-- Sección del logo -->
-      <img src="Logo2.png" alt="Logo AltusPlay"> <!-- Imagen del logo -->
-      <h1><a href="index.html">ALTUSPLAY</a></h1> <!-- Nombre del sitio con enlace a inicio -->
+  <!-- Barra de navegación -->
+<header>
+  <div class="logo">
+    <img src="Logo2.png" alt="Logo AltusPlay">
+    <h1><a href="index.html">ALTUSPLAY</a></h1>
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+  <!-- Contenedor de navegación (importante que sea un div, no solo nav si usas flex con columna) -->
+  <div class="nav-links">
+    <a href="nosotros.html">Nosotros</a>
+    <a href="#Servicios">Servicios</a>
+    <a href="#Beneficios">Beneficios</a>
+    <a href="#reservas">Reservas</a>
+    <a href="#replays">Mi Replays</a>
+    <a href="#Precios">Precios</a>
+    <a href="#Comunidad">Comunidad</a>
+    <a href="#contacto">Contacto</a>
+    <button class="btn-login">Login | Register</button>
+  </div>
+</header>
+  <section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="video.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+  <div class="hero-content">
+   <h2>Juega más inteligente,<br>llega más alto</h2>
+    <p>La nueva era del deporte comienza con datos, comunidad y tecnología.</p>
+    <div class="hero-buttons">
+      <a href="#inicio" class="btn-primary">Comienza Ahora</a>
+      <a href="#reservas" class="btn-secondary">Reservar Tú Mesa</a>
     </div>
-	
-    <button class="menu-toggle" aria-label="Abrir menú">☰</button> <!-- Botón hamburguesa -->
-	
-    <div class="nav-links"> <!-- Contenedor de enlaces del menú -->
-      <a href="nosotros.html">Nosotros</a>
-      <a href="#Servicios">Servicios</a>
-      <a href="#Beneficios">Beneficios</a>
-      <a href="#reservas">Reservas</a>
-      <a href="#replays">Mi Replays</a>
-      <a href="#Precios">Precios</a>
-      <a href="#Comunidad">Comunidad</a>
-      <a href="#contacto">Contacto</a>
-      <button class="btn-login">Login | Register</button>
+  </div>
+</section>
+
+<!-- SECCION DE DESTACADAS --> <!-- SECCION DE DESTACADAS --> <!-- SECCION DE DESTACADAS -->
+
+<section id="destacados" class="seccion-cards">
+
+  <!-- CARD 1: ¿Qué es AltusPlay? -->
+  <div class="card">
+    <h3>¿Qué es AltusPlay?</h3>
+    <div class="slider" id="slider1">
+      <div class="slide active">Una plataforma que fusiona deporte con tecnología inteligente.</div>
+      <div class="slide">AltusPlay analiza tu rendimiento y lo transforma en progreso visible.</div>
+      <div class="slide">Optimiza tu juego con datos, repeticiones y comunidad conectada.</div>
     </div>
-  </header>
-
-  <!-- ========== SECCIÓN PRINCIPAL HERO ========== -->
-  <section class="hero"> <!-- Sección principal con video de fondo -->
-    <video autoplay muted loop playsinline class="hero-video"> <!-- Video de fondo -->
-      <source src="video.mp4" type="video/mp4"> <!-- Fuente del video -->
-      Tu navegador no soporta video HTML5. <!-- Mensaje alternativo -->
-    </video>
-    <div class="hero-content"> <!-- Contenido sobre el video -->
-      <h2>Juega más inteligente,<br>llega más alto</h2> <!-- Lema principal -->
-      <p>La nueva era del deporte comienza con datos, comunidad y tecnología.</p> <!-- Descripción -->
-      <div class="hero-buttons"> <!-- Botones de acción -->
-        <a href="#inicio" class="btn-primary">Comienza Ahora</a>
-        <a href="#reservas" class="btn-secondary">Reservar Tú Mesa</a>
-      </div>
+    <div class="dots" data-slider="slider1">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
     </div>
-  </section>
+  </div>
 
-  <!-- ========== SECCIÓN DESTACADOS ========== -->
-  <section id="destacados" class="seccion-cards"> <!-- Contenedor general de tarjetas destacadas -->
-
-    <!-- Tarjeta 1: ¿Qué es AltusPlay? -->
-    <div class="card">
-      <h3>¿Qué es AltusPlay?</h3>
-      <div class="slider" id="slider1">
-        <div class="slide active">Una plataforma que fusiona deporte con tecnología inteligente.</div>
-        <div class="slide">AltusPlay analiza tu rendimiento y lo transforma en progreso visible.</div>
-        <div class="slide">Optimiza tu juego con datos, repeticiones y comunidad conectada.</div>
+  <!-- CARD 2: Videos explicativos -->
+  <div class="card">
+    <h3>Video de demostración</h3>
+    <div class="slider" id="slider2">
+      <div class="slide active">
+        <video src="video1.mp4" controls poster="preview1.jpg"></video>
       </div>
-      <div class="dots" data-slider="slider1">
-        <span class="dot active" data-index="0"></span>
-        <span class="dot" data-index="1"></span>
-        <span class="dot" data-index="2"></span>
+      <div class="slide">
+        <video src="video2.mp4" controls poster="preview2.jpg"></video>
       </div>
-    </div>
-
-    <!-- Tarjeta 2: Video demostración -->
-    <div class="card">
-      <h3>Video de demostración</h3>
-      <div class="slider" id="slider2">
-        <div class="slide active"><video src="video1.mp4" controls poster="preview1.jpg"></video></div>
-        <div class="slide"><video src="video2.mp4" controls poster="preview2.jpg"></video></div>
-        <div class="slide"><video src="video3.mp4" controls poster="preview3.jpg"></video></div>
-      </div>
-      <div class="dots" data-slider="slider2">
-        <span class="dot active" data-index="0"></span>
-        <span class="dot" data-index="1"></span>
-        <span class="dot" data-index="2"></span>
-      </div>
-    </div>
-
-    <!-- Tarjeta 3: Testimonios -->
-    <div class="card">
-      <h3>Testimonios</h3>
-      <div class="slider" id="slider3">
-        <div class="slide active">“AltusPlay revolucionó la forma en que entreno.”<br><strong>- Camila</strong></div>
-        <div class="slide">“Puedo ver mis repeticiones desde el celular en segundos.”<br><strong>- Esteban</strong></div>
-        <div class="slide">“Siento que por fin juego con propósito.”<br><strong>- Laura</strong></div>
-      </div>
-      <div class="dots" data-slider="slider3">
-        <span class="dot active" data-index="0"></span>
-        <span class="dot" data-index="1"></span>
-        <span class="dot" data-index="2"></span>
+      <div class="slide">
+        <video src="video3.mp4" controls poster="preview3.jpg"></video>
       </div>
     </div>
-  </section>
-
-  <!-- ========== SECCIÓN BENEFICIOS ========== -->
-  <section id="beneficios" class="seccion-beneficios">
-    <h2 class="titulo-seccion">Beneficios</h2>
-    <div class="contenedor-beneficios">
-
-      <!-- Grupo 1 -->
-      <div class="beneficio">
-        <h3>Para deportistas recreativos</h3>
-        <ul>
-          <li>🏃‍♂️ Reserva flexible sin complicaciones</li>
-          <li>📈 Seguimiento de progreso mensual y por sesión</li>
-          <li>🎥 Repeticiones automáticas de tus mejores jugadas</li>
-          <li>🕹️ Comunidad y gamificación para mantenerte motivado</li>
-        </ul>
-      </div>
-
-      <!-- Grupo 2 -->
-      <div class="beneficio">
-        <h3>Para deportistas profesionales</h3>
-        <ul>
-          <li>🔍 Análisis técnico avanzado con cámaras y estadísticas</li>
-          <li>🧬 Datos comparativos por perfil, rival y evolución</li>
-          <li>🎯 Entrenamiento basado en IA adaptado a tu estilo</li>
-          <li>💼 Visibilidad ante marcas o clubes (ranking + logros)</li>
-        </ul>
-      </div>
-
-      <!-- Grupo 3 -->
-      <div class="beneficio">
-        <h3>Para entrenadores</h3>
-        <ul>
-          <li>🎬 Visualización de jugadas clave en tiempo real</li>
-          <li>📊 Informe técnico por sesión para cada alumno</li>
-          <li>🤝 Fidelización de alumnos con seguimiento personalizado</li>
-          <li>👥 Gestión de múltiples alumnos desde un solo perfil</li>
-        </ul>
-      </div>
-
-      <!-- Grupo 4 -->
-      <div class="beneficio">
-        <h3>Para empresas</h3>
-        <ul>
-          <li>💪 Bienestar corporativo inteligente con indicadores de uso</li>
-          <li>🎮 Activaciones tecnológicas para eventos internos o ferias</li>
-          <li>📅 Reservas y reportes de uso para RRHH</li>
-          <li>🌱 Fomento de hábitos saludables a través del juego</li>
-        </ul>
-      </div>
+    <div class="dots" data-slider="slider2">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
     </div>
-  </section>
+  </div>
 
-  <!-- ========== PIE DE PÁGINA ========== -->
-  <section class="contenido">
-    <div class="col">
-      <h3>¿Qué es ALTUSPLAY?</h3>
-      <p>Una plataforma deportiva pensada para ti, donde la inteligencia deportiva se convierte en tu aliado.</p>
+  <!-- CARD 3: Testimonios -->
+  <div class="card">
+    <h3>Testimonios</h3>
+    <div class="slider" id="slider3">
+      <div class="slide active">“AltusPlay revolucionó la forma en que entreno.”<br><strong>- Camila</strong></div>
+      <div class="slide">“Puedo ver mis repeticiones desde el celular en segundos.”<br><strong>- Esteban</strong></div>
+      <div class="slide">“Siento que por fin juego con propósito.”<br><strong>- Laura</strong></div>
     </div>
-    <div class="col">
-      <h3>Beneficios y servicios</h3>
+    <div class="dots" data-slider="slider3">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- SECCION BENEFICIOS --> <!-- SECCION BENEFICIOS --> <!-- SECCION BENEFICIOS -->
+
+<section id="beneficios" class="seccion-beneficios">
+  <h2 class="titulo-seccion">Beneficios</h2>
+  <div class="contenedor-beneficios">
+
+    <!-- Deportistas recreativos -->
+    <div class="beneficio">
+      <h3>Para deportistas recreativos</h3>
       <ul>
-        <li>Análisis deportivo en tiempo real</li>
-        <li>Soporte personalizado</li>
-        <li>Repeticiones automáticas</li>
+        <li><span class="icon">🏃‍♂️</span><span>Reserva flexible sin complicaciones</span></li>
+        <li><span class="icon">📈</span><span>Seguimiento de progreso mensual y por sesión</span></li>
+        <li><span class="icon">🎥</span><span>Repeticiones automáticas de tus mejores jugadas</span></li>
+        <li><span class="icon">🕹️</span><span>Comunidad y gamificación para mantenerte motivado</span></li>
       </ul>
     </div>
-    <div class="col">
-      <h3>Tecnología</h3>
-      <p>Integración con cámaras, tablets, pantallas inteligentes y más.</p>
+
+    <!-- Deportistas profesionales -->
+    <div class="beneficio">
+      <h3>Para deportistas profesionales</h3>
+      <ul>
+        <li><span class="icon">🔍</span><span>Análisis técnico avanzado con cámaras y estadísticas</span></li>
+        <li><span class="icon">🧬</span><span>Datos comparativos por perfil, rival y evolución</span></li>
+        <li><span class="icon">🎯</span><span>Entrenamiento basado en IA adaptado a tu estilo</span></li>
+        <li><span class="icon">💼</span><span>Visibilidad ante marcas o clubes (ranking + logros)</span></li>
+      </ul>
+    </div>
+
+    <!-- Entrenadores -->
+    <div class="beneficio">
+      <h3>Para entrenadores</h3>
+      <ul>
+        <li><span class="icon">🎬</span><span>Visualización de jugadas clave en tiempo real</span></li>
+        <li><span class="icon">📊</span><span>Informe técnico por sesión para cada alumno</span></li>
+        <li><span class="icon">🤝</span><span>Fidelización de alumnos con seguimiento personalizado</span></li>
+        <li><span class="icon">👥</span><span>Gestión de múltiples alumnos desde un solo perfil</span></li>
+      </ul>
+    </div>
+
+    <!-- Empresas -->
+    <div class="beneficio">
+      <h3>Para empresas</h3>
+      <ul>
+        <li><span class="icon">💪</span><span>Bienestar corporativo inteligente con indicadores de uso</span></li>
+        <li><span class="icon">🎮</span><span>Activaciones tecnológicas para eventos internos o ferias</span></li>
+        <li><span class="icon">📅</span><span>Reservas y reportes de uso para RRHH</span></li>
+        <li><span class="icon">🌱</span><span>Fomento de hábitos saludables a través del juego</span></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SECCION FOOTER --> <!-- SECCION FOOTER --> <!-- SECCION FOOTER -->
+
+  <section class="contenido"> <!-- Sección de contenido informativo -->
+    <div class="col"> <!-- Primera columna: Qué es AltusPlay -->
+      <h3>¿Qué es ALTUSPLAY?</h3> <!-- Título de la sección -->
+      <p>Una plataforma deportiva pensada para ti, donde la inteligencia deportiva se convierte en tu aliado.</p> <!-- Descripción -->
+    </div>
+    <div class="col"> <!-- Segunda columna: Beneficios y servicios -->
+      <h3>Beneficios y servicios</h3> <!-- Título de la sección -->
+      <ul> <!-- Lista de beneficios -->
+        <li>Análisis deportivo en tiempo real</li> <!-- Item 1 -->
+        <li>Soporte personalizado</li> <!-- Item 2 -->
+        <li>Repeticiones automáticas</li> <!-- Item 3 -->
+      </ul>
+    </div>
+    <div class="col"> <!-- Tercera columna: Tecnología -->
+      <h3>Tecnología</h3> <!-- Título de la sección -->
+      <p>Integración con cámaras, tablets, pantallas inteligentes y más.</p> <!-- Descripción -->
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 ALTUSPLAY - Todos los derechos reservados</p>
+  <footer> <!-- Pie de página -->
+    <p>&copy; 2025 ALTUSPLAY - Todos los derechos reservados</p> <!-- Derechos de autor -->
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,6 +1,3 @@
-/* ============================================
-   VARIABLES DE COLOR
-============================================ */
 :root {
   /* üåä Tonos Azules Principales */
   --cerulean:         #0cbdd5;  /* Azul cer√∫leo */
@@ -21,87 +18,47 @@
   --white:            #ffffff;  /* Blanco puro */
 }
 
-/* ============================================
-   ESTILO GLOBAL
-============================================ */
 body {
-  margin: 0; /* Quita margen predeterminado del navegador */
-  font-family: 'Inter', sans-serif; /* Fuente moderna y legible */
-  background-color: var(--firefly); /* Fondo oscuro elegante */
-  color: white; /* Texto claro por defecto */
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--firefly);
+  color: white;
 }
 
-/* ============================================
-   ENCABEZADO BARRA DE NAVEGACION
-============================================ */
 header {
-  display: flex;  /* Layout horizontal */
-  justify-content: space-between;  /* Separaci®Æn entre logo y men®≤ */
-  align-items: center;  /* Centrado vertical */
-  padding: 0.1rem 2rem;  /* Relleno interior */
-  background-color: var(--firefly);  /* Fondo coherente con el body */
-  position: sticky;  /* Se fija al hacer scroll */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 2rem;
+  background-color: var(--firefly);
+  position: sticky;
   top: 0;
-  z-index: 1000;  /* Se mantiene visible */
+  z-index: 1000;
 }
 
 .logo {
-  display: flex;  /* Elementos en fila */
+  display: flex;
   align-items: center;
-  gap: 0.5rem;  /* Espacio entre imagen y texto */
+  gap: 0.5rem;
 }
 
 .logo img {
-  height: 50px;  /* Tama?o del logo */
+  height: 50px;
 }
 
 .logo h1 {
-  margin: 0;
-  font-size: 1.5rem;  /* Tama?o del nombre ALTUSPLAY */
-}
-
-.logo h1 a {
   color: var(--white);
-  text-decoration: none;
-  font-weight: bold;
 }
 
-.nav-links {
-  display: flex;  /* Enlaces en fila */
-  align-items: center;
-  gap: 1rem;  /* Espacio entre enlaces */
-}
-
-.nav-links a {
-  color: var(--white);
+nav a {
+  color: white;
+  margin: 0 1rem;
   text-decoration: none;
   font-weight: bold;
 }
 
 .btn-login {
-  background-color: var(--cerulean);  /* Bot®Æn azul vibrante */
-  border: none;
-  padding: 0.5rem 1rem;
-  color: white;
-  border-radius: 20px;  /* Bordes redondeados */
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.menu-toggle {
-  display: none;  /* Solo aparece en m®Ævil */
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* ============================================
-   BOT√ìN LOGIN
-============================================ */
-.btn-login {
-  background-color: var(--cerulean); /* Azul vibrante */
+  background-color: var(--cerulean);
   border: none;
   padding: 0.5rem 1rem;
   color: white;
@@ -110,11 +67,9 @@ header {
   font-weight: bold;
 }
 
-/* ============================================
-   SECCI√ìN HERO
-============================================ */
 .hero {
   position: relative;
+  color: white;
   padding: 5rem 2rem;
   text-align: center;
   overflow: hidden;
@@ -123,7 +78,6 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: white;
 }
 
 .hero-video {
@@ -132,9 +86,9 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;  /* Rellena el ®¢rea sin deformar */
+  object-fit: cover;
   z-index: 0;
-  opacity: 0.6;  /* Permite que el contenido se vea encima */
+  opacity: 0.6;
 }
 
 .hero-content {
@@ -172,9 +126,28 @@ header {
   color: white;
 }
 
-/* ============================================
-   SECCION DE DESTACADOS
-============================================ */
+.contenido {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  background-color: var(--firefly);
+}
+
+.col {
+  width: 300px;
+  margin: 1rem;
+}
+
+footer {
+  background-color: var(--firefly);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* SECCI√ìN DESTACADAS */
 .seccion-cards {
   display: flex;
   justify-content: space-around;
@@ -252,18 +225,16 @@ header {
   background-color: var(--cerulean);
 }
 
-/* ============================================
-   SECCION DE BENEFICIOS
-============================================ */
+/* SECCI√ìN BENEFICIOS */
 .seccion-beneficios {
-  background-color: var(--firefly);  /* Fondo oscuro como el body */
+  background-color: var(--firefly);
   padding: 4rem 2rem;
   text-align: center;
 }
 
 .titulo-seccion {
   font-size: 2.5rem;
-  color: var(--cerulean);  /* Color azul vibrante para t®™tulo */
+  color: var(--cerulean);
   margin-bottom: 2rem;
 }
 
@@ -319,39 +290,57 @@ header {
   line-height: 1.4;
 }
 
-/* ============================================
-   PIE DE P√ÅGINA
-============================================ */
-footer {
-  background-color: var(--firefly);
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #666;
+/* Animaci√≥n */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-/* ===================================================
-   MEN®≤ HAMBURGUESA RESPONSIVE
-   Aparece en pantallas peque?as y oculta el men®≤ hasta hacer clic
-=================================================== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .menu-toggle {
-    display: block;  /* Se muestra en m®Æviles */
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
   }
 
   .nav-links {
+    max-height: 0;
+    overflow: hidden;
     flex-direction: column;
     width: 100%;
     background-color: var(--firefly);
-    max-height: 0;
-    overflow: hidden;
     padding: 0 2rem;
     transition: max-height 0.4s ease, padding 0.3s ease;
   }
 
   .nav-links.active {
-    max-height: 500px;
+    max-height: 500px; /* suficiente para todos los enlaces */
     padding: 1rem 2rem;
   }
 
@@ -359,7 +348,6 @@ footer {
   .btn-login {
     margin: 0.5rem 0;
     display: block;
-    text-align: center;
   }
 
   header {
@@ -369,21 +357,24 @@ footer {
   .logo h1 {
     font-size: 1.2rem;
   }
-
-  .seccion-cards {
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
-    gap: 2rem;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 90%;
-  }
 }
 
+.nav-links a,
+.nav-links a:visited,
+.nav-links a:focus,
+.nav-links a:active {
+  color: var(--white);  /* o var(--bon-jour) si quieres gris claro */
+  text-decoration: none;
+}
+.logo h1 a,
+.logo h1 a:visited,
+.logo h1 a:focus,
+.logo h1 a:active {
+  color: var(--white);       /* o var(--cerulean) si quieres mantenerlo azul claro */
+  text-decoration: none;     /* sin subrayado */
+}
 @media (max-width: 480px) {
+  /* 1. Ajuste del logo y t√≠tulo */
   .logo h1 {
     font-size: 1.4rem;
   }
@@ -392,6 +383,7 @@ footer {
     height: 40px;
   }
 
+  /* 2. Ajuste del lema hero */
   .hero h2 {
     font-size: 2.2rem;
     line-height: 1.2;
@@ -407,6 +399,7 @@ footer {
     min-height: auto;
   }
 
+  /* 3. Ajuste de botones */
   .hero-buttons {
     display: flex;
     flex-direction: column;
@@ -418,5 +411,23 @@ footer {
     text-align: center;
     font-size: 1.2rem;
     padding: 0.75rem 0;
+  }
+}.beneficio {
+  opacity: 1 !important;
+  transform: none !important;
+}@media (min-width: 769px) {
+  .logo h1 {
+    font-size: 1.8rem; /* o 2rem si lo quieres m√°s grande */
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+    margin: 0 0.8rem;
+	font-weight: bold;
+  }
+
+  .btn-login {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
   }
 }

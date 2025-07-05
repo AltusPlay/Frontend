@@ -1,45 +1,47 @@
-<!DOCTYPE html> <!-- Tipo de documento: HTML5 -->
-<html lang="es"> <!-- Lenguaje principal en español -->
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala adaptativa para móviles -->
-  <title>Nosotros | AltusPlay</title> <!-- Título de la pestaña -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros | AltusPlay</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css" />       <!-- Estilos base (barra de navegación, etc.) -->
-  <link rel="stylesheet" href="styles_nosotros.css"> <!-- Hoja de estilos específica de esta página -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> <!-- Fuente Google Fonts -->
+  <link rel="stylesheet" href="nosotros.css" />     <!-- Estilos específicos de esta página -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> <!-- Fuente Inter desde Google Fonts -->
 </head>
-<body> <!-- Cuerpo principal -->
+<body>
 
-  <!-- ========== ENCABEZADO CON NAVEGACIÓN ========== -->
-  <header> <!-- Sección superior fija con logo y navegación -->
-    <div class="logo"> <!-- Contenedor del logotipo -->
-      <img src="Logo2.png" alt="Logo AltusPlay"> <!-- Imagen del logo -->
-      <h1><a href="index.html">ALTUSPLAY</a></h1> <!-- Enlace al inicio -->
-    </div>
-	
-    <button class="menu-toggle" aria-label="Abrir menú">☰</button> <!-- Botón hamburguesa -->
-    
-	<div class="nav-links"> <!-- Contenedor de enlaces del menú -->
-      <a href="index.html#Servicios">Servicios</a>
-      <a href="index.html#Beneficios">Beneficios</a>
-      <a href="index.html#reservas">Reservas</a>
-      <a href="index.html#replays">Mi Replays</a>
-      <a href="index.html#Precios">Precios</a>
-      <a href="index.html#Comunidad">Comunidad</a>
-      <a href="index.html#contacto">Contacto</a>
-      <button class="btn-login">Login | Register</button> <!-- Botón de inicio de sesión -->
-    </div>
-  </header>
+  <!-- Barra de navegación -->
+ <header>
+  <div class="logo">
+    <img src="Logo2.png" alt="Logo AltusPlay">
+    <h1><a href="index.html">ALTUSPLAY</a></h1>
+  </div>
 
-  <!-- ========== SECCIÓN HERO NOSOTROS ========== -->
-  <section class="hero-nosotros"> <!-- Encabezado visual de la sección Nosotros -->
-    <div class="hero-content"> <!-- Contenido centrado -->
-      <h2>Creemos en el poder del juego inteligente</h2> <!-- Frase principal -->
-      <p>Más que tecnología, somos pasión por el deporte y por quienes lo viven a su manera.</p> <!-- Subtítulo -->
-    </div>
+  <!-- Botón hamburguesa visible solo en móvil -->
+  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+  <!-- Menú de navegación -->
+  <nav class="nav-links">
+    <a href="nosotros.html">Nosotros</a>
+    <a href="#Servicios">Servicios</a>
+    <a href="#Beneficios">Beneficios</a>
+    <a href="#reservas">Reservas</a>
+    <a href="#replays">Mi Replays</a>
+    <a href="#Precios">Precios</a>
+    <a href="#Comunidad">Comunidad</a>
+    <a href="#contacto">Contacto</a>
+    <button class="btn-login">Login | Register</button>
+  </nav>
+</header>
+
+  <!-- Hero -->
+  <section class="hero-nosotros">
+    <h1>Conoce a AltusPlay</h1>
+    <p>La historia, propósito y el equipo detrás de la innovación deportiva</p>
   </section>
-  
-  <!-- ========== SECCIÓN MISIÓN - VISIÓN ========== -->
+
+  <!-- Misión y Visión -->
   <section class="mision-vision">
     <div class="mision">
       <h2>Misión</h2>
@@ -50,9 +52,8 @@
       <p2>Ser el ecosistema deportivo digital más influyente de Latinoamérica, combinando innovación, comunidad y rendimiento.</p2>
     </div>
   </section>
-  
-    <!-- ========== SECCIÓN HISTORIA ========== -->
-  
+
+  <!-- Historia -->
   <section class="historia">
     <h2>Nuestra historia</h2>
     <p>
@@ -62,26 +63,8 @@
     </p>
   </section>
 
-   <!-- ========== SECCIÓN VALORES Y DIFERENCIAL ========== -->
-  <section class="contenido"> <!-- Segunda fila informativa -->
-    <div class="col"> <!-- Columna valores -->
-      <h3>Valores</h3>
-      <ul>
-        <li>💡 Innovación cercana y útil</li>
-        <li>💪 Inclusión y diversidad deportiva</li>
-        <li>🧠 Tecnología para mejorar, no para complicar</li>
-        <li>🌍 Comunidad global, experiencia local</li>
-      </ul>
-    </div>
-    <div class="col"> <!-- Columna diferencial -->
-      <h3>¿Por qué AltusPlay?</h3>
-      <p>Porque creemos que todos pueden jugar mejor con las herramientas adecuadas. Y queremos ponerlas en tus manos.</p>
-    </div>
-  </section>
-  
-   <!-- ========== SECCIÓN EQUIPO FUNDADOR ========== -->
-   
-   <section class="equipo">
+  <!-- Equipo fundador -->
+  <section class="equipo">
     <h2>Equipo fundador</h2>
     <div class="tarjetas-equipo">
       <div class="miembro">
@@ -97,7 +80,6 @@
     </div>
   </section>
 
-  <!-- ========== PIE DE PÁGINA ========== -->
   <section class="contenido"> <!-- Sección de contenido informativo -->
     <div class="col"> <!-- Primera columna: Qué es AltusPlay -->
       <h3>¿Qué es ALTUSPLAY?</h3> <!-- Título de la sección -->
@@ -116,11 +98,10 @@
       <p>Integración con cámaras, tablets, pantallas inteligentes y más.</p> <!-- Descripción -->
     </div>
   </section>
-  
-  <footer> <!-- Sección final de la página -->
-    <p>&copy; 2025 ALTUSPLAY - Todos los derechos reservados</p> <!-- Derechos -->
-  </footer>
 
-  <script src="script.js"></script> <!-- Script de interactividad -->
+  <footer> <!-- Pie de página -->
+    <p>&copy; 2025 ALTUSPLAY - Todos los derechos reservados</p> <!-- Derechos de autor -->
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

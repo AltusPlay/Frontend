@@ -1,6 +1,3 @@
-/* ===================================================
-   PALETA DE COLORES GLOBAL
-=================================================== */
 :root {
   /* 🌊 Tonos Azules Principales */
   --cerulean:         #0cbdd5;  /* Azul cerúleo */
@@ -21,76 +18,25 @@
   --white:            #ffffff;  /* Blanco puro */
 }
 
-/* ===================================================
-   CONFIGURACIÓN GLOBAL
-=================================================== */
 body {
-  margin: 0;                         /* Elimina márgenes predeterminados */
-  font-family: 'Inter', sans-serif; /* Fuente moderna y legible */
-  background-color: var(--firefly); /* Fondo oscuro para toda la página */
-  color: var(--bon-jour);           /* Texto en gris claro elegante */
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--firefly);
+  color: var(--bon-jour);
 }
 
-/* ===================================================
-   ENCABEZADO BARRA DE NAVEGACIÓN
-=================================================== */
 header {
-  display: flex;                     /* Layout horizontal */
-  justify-content: space-between;   /* Espacio entre logo y menú */
-  align-items: center;              /* Centrado vertical */
-  padding: 0.1rem 2rem;             /* Espaciado interno */
-  background-color: var(--firefly); /* Fondo oscuro */
-  position: sticky;                 /* Fijado al top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 2rem;
+  background-color: var(--firefly);
+  position: sticky;
   top: 0;
-  z-index: 1000;                    /* Encima de todo */
+  z-index: 1000;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo img {
-  height: 50px;
-}
-
-.logo h1 a {
-  color: var(--white);
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.nav-links a {
-  color: var(--white);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn-login {
-  background-color: var(--cerulean);
-  border: none;
-  padding: 0.5rem 1rem;
-  color: white;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.menu-toggle {
-  display: none; /* Se activa solo en móviles */
-}
-
-/* ===================================================
-   SECCIÓN HERO NOSOTROS
-=================================================== */
+/* Hero principal */
 .hero-nosotros {
   background: linear-gradient(to right, var(--half-baked), var(--blue-zodiac));
   padding: 5rem 2rem;
@@ -98,21 +44,25 @@ header {
   color: white;
 }
 
-.hero-nosotros h1,
-.hero-content h2 {
+.hero-nosotros h1 {
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
 }
 
-.hero-nosotros p,
-.hero-content p {
+.hero-nosotros p {
   font-size: 1.2rem;
   opacity: 0.9;
 }
 
-/* ===================================================
-   SECCIÓN MISIÓN Y VISIÓN
-=================================================== */
+/* Sección Misión y Visión */
+.mision p2,
+.vision p2 {
+  color: var(--blue-zodiac-dark);
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-weight: bold;
+}
+
 .mision-vision {
   display: flex;
   flex-wrap: wrap;
@@ -134,17 +84,7 @@ header {
   margin-bottom: 0.5rem;
 }
 
-.mision p2,
-.vision p2 {
-  color: var(--blue-zodiac-dark);
-  font-size: 1.2rem;
-  opacity: 0.9;
-  font-weight: bold;
-}
-
-/* ===================================================
-   SECCIÓN HISTORIA
-=================================================== */
+/* Historia */
 .historia {
   background: linear-gradient(to right, var(--half-baked), var(--blue-zodiac));
   padding: 5rem 2rem;
@@ -157,9 +97,7 @@ header {
   margin-bottom: 0.5rem;
 }
 
-/* ===================================================
-   EQUIPO FUNDADOR
-=================================================== */
+/* Equipo fundador */
 .equipo {
   background-color: var(--white);
   padding: 4rem 2rem;
@@ -199,9 +137,6 @@ header {
   color: var(--cerulean);
 }
 
-/* ===================================================
-   PIE DE PÁGINA - CONTENIDO INFERIOR
-=================================================== */
 .contenido {
   display: flex;
   justify-content: space-around;
@@ -215,52 +150,10 @@ header {
   margin: 1rem;
 }
 
-/* ===================================================
-   PIE DE PÁGINA
-=================================================== */
 footer {
   background-color: var(--firefly);
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
   color: #666;
-}
-
-/* ===================================================
-   MENU HAMBURGUESA (RESPONSIVE)
-=================================================== */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    background-color: var(--firefly);
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-  }
-
-  .nav-links.active {
-    max-height: 300px;
-    padding: 1rem 0;
-  }
-
-  .nav-links a,
-  .btn-login {
-    display: block;
-    padding: 0.5rem 1rem;
-    text-align: center;
-  }
-
-  header {
-    flex-wrap: wrap;
-  }
 }
