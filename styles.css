@@ -50,6 +50,25 @@ header {
   color: var(--white);
 }
 
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.logo-text .subtitle {
+  font-size: 0.75rem;
+  color: var(--bon-jour); /* Gris claro elegante */
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
 nav a {
   color: white;
   margin: 0 1rem;
