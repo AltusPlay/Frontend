@@ -36,29 +36,26 @@ header {
   z-index: 1000;
 }
 
+.logo img {
+  height: 70px;
+}
+
 .logo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.logo img {
-  height: 70px;
-}
-
-.logo h1 {
-  color: var(--white);
-}
-
 .logo-text {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* 🔥 hace que los elementos estén uno debajo del otro */
   line-height: 1;
 }
 
 .logo-text h1 {
   margin: 0;
   font-size: 1.6rem;
+  color: var(--white);
 }
 
 .logo-text .subtitle {
