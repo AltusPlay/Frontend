@@ -38,6 +38,7 @@ header {
 
 .logo img {
   height: 70px;
+  align-items: center; /* ✅ alinea verticalmente el logo y el texto */
   display: block;
 }
 
