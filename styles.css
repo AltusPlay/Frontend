@@ -258,6 +258,121 @@ nav a {
   background-color: var(--cerulean);
 }
 
+
+/* ============================================
+   SECCIÓN NOSOTROS PERSONALIZADA
+============================================ */
+.seccion-nosotros {
+  background-color: var(--firefly);
+  padding: 4rem 2rem;
+  color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.seccion-nosotros .contenido-nosotros {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.seccion-nosotros h2 {
+  color: var(--cerulean);
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.seccion-nosotros p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--bon-jour);
+}
+
+.seccion-nosotros .valores {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.valor-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.valor-item i {
+  font-size: 1.5rem;
+  color: var(--cerulean);
+}
+
+.valor-item span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--cerulean);
+}
+
+.seccion-nosotros .imagen-nosotros {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.seccion-nosotros .imagen-nosotros img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+.identidad-altusplay {
+  background-color: var(--blue-zodiac);
+  padding: 3rem 2rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.identidad-altusplay h3 {
+  color: var(--cerulean);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.identidad-altusplay p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: var(--bon-jour);
+}
+
+.politicas-nosotros {
+  background-color: var(--firefly);
+  padding: 3rem 2rem;
+  border-top: 1px solid var(--blue-zodiac-dark);
+}
+
+.politicas-nosotros h3 {
+  color: var(--cerulean);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.politicas-nosotros ul {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  color: var(--bon-jour);
+}
+
+.politicas-nosotros li {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+
 /* ============================================
    CONTENIDO Y PIE DE PÁGINA
 ============================================ */
