@@ -1,101 +1,71 @@
-<!DOCTYPE html> <!-- Indica que este es un documento HTML5 -->
-<html lang="es"> <!-- Define el idioma como español -->
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptabilidad en móviles -->
-  <title>AltusPlay | Más que jugar</title> <!-- Título de la página que aparece en el navegador -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservas | AltusPlay</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
-  <link rel="stylesheet" href="reservas.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> <!-- Fuente Inter desde Google Fonts -->
-  </head>
-  
-<header>
-  <div class="logo">
-    <img src="Logo2.png" alt="Logo AltusPlay">
-    <h1><a href="index.html">ALTUSPLAY</a></h1>
-  </div>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
 
-  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-
-  <nav class="nav-links">
-    <a href="nosotros.html">Nosotros</a>
-    <a href="soluciones.html">Soluciones</a>
-    <a href="reservas.html">Reservas</a>
-    <a href="replays.html">Mi Replays</a>
-    <a href="planes.html">planes</a>
-    <a href="Comunidad.html">Comunidad</a>
-    <button class="btn-login">Login | Register</button>
-  </nav>
-</header>
-
-<section class="seccion-reservas" id="reservas">
-  <h2 class="titulo-seccion">Reservas</h2>
-  <p class="subtitulo-seccion">Reserva tu espacio en segundos</p>
-
-  <div class="reserva-movil">
-    <div class="telefono-mockup">
-      <div class="pantalla">
-        <div class="logo-reserva">ALTUSPLAY</div>
-        <div class="calendario">
-          <span class="mes">Julio 2025</span>
-          <div class="dias">L M M J V S D</div>
-          <div class="fechas">
-            <button class="activo">4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-          </div>
-        </div>
-        <div class="horas">
-          <button>9:00</button>
-          <button>10:00</button>
-          <button>11:00</button>
-        </div>
-        <button class="btn-reservar">Reservar ahora</button>
+<body>
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="logo">
+      <img src="Logo2.png" alt="Logo AltusPlay" />
+      <div class="logo-text">
+        <h1><a href="index.html">ALTUSPLAY</a></h1>
+        <span class="subtitle">TENIS DE MESA</span>
       </div>
     </div>
-  </div>
 
-  <div class="accesos-reserva">
-    <div class="acceso">
-      <i class="icono-deportista">🏓</i>
-      <span>Deportistas</span>
-    </div>
-    <div class="acceso">
-      <i class="icono-empresa">🏢</i>
-      <span>Empresas</span>
-    </div>
-    <div class="acceso">
-      <i class="icono-entrenador">🧑‍🏫</i>
-      <span>Entrenadores</span>
-    </div>
-  </div>
-</section>
-<!-- SECCION FOOTER --> <!-- SECCION FOOTER --> <!-- SECCION FOOTER -->
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
 
-  <section class="contenido"> <!-- Sección de contenido informativo -->
-    <div class="col"> <!-- Primera columna: Qué es AltusPlay -->
-      <h3>GENERAL</h3> <!-- Título de la sección -->
-      <p>Una plataforma deportiva pensada para ti, donde la inteligencia deportiva se convierte en tu aliado.</p> <!-- Descripción -->
+    <nav class="nav-links">
+      <a href="nosotros.html">Nosotros</a>
+      <a href="reservas.html" class="active">Reservas</a>
+      <a href="replays.html">Replays</a>
+      <a href="planes.html">Planes</a>
+    </nav>
+  </header>
+
+  <!-- ======================= HERO ======================= -->
+  <main class="hero seccion-reservas">
+    <div class="hero-content">
+      <h2>Reservas</h2>
+      <p>Organiza tu juego. Separa tu espacio cuando quieras y como quieras.</p>
     </div>
-    <div class="col"> <!-- Segunda columna: Beneficios y servicios -->
-      <h3>LEGAL</h3> <!-- Título de la sección -->
-      <ul> <!-- Lista de beneficios -->
-        <li>Análisis deportivo en tiempo real</li> <!-- Item 1 -->
-        <li>Soporte personalizado</li> <!-- Item 2 -->
-        <li>Repeticiones automáticas</li> <!-- Item 3 -->
-      </ul>
-    </div>
-    <div class="col"> <!-- Tercera columna: Tecnología -->
-      <h3>CONTACTANOS</h3> <!-- Título de la sección -->
-      <p>Integración con cámaras, tablets, pantallas inteligentes y más.</p> <!-- Descripción -->
-    </div>
+  </main>
+
+  <!-- ======================= CONTENIDO (vacío por ahora) ======================= -->
+  <section class="contenido">
+    <!-- Aquí irá más adelante el formulario de reservas o calendario interactivo -->
   </section>
 
-  <footer> <!-- Pie de página -->
-    <p>&copy; 2025 ALTUSPLAY - Todos los derechos reservados</p> <!-- Derechos de autor -->
+  <!-- ======================= FOOTER ======================= -->
+  <footer>
+    <section class="contenido">
+      <div class="col">
+        <h3>GENERAL</h3>
+        <p>Una plataforma deportiva pensada para ti, donde la inteligencia deportiva se convierte en tu aliado.</p>
+      </div>
+      <div class="col">
+        <h3>LEGAL</h3>
+        <ul>
+          <li>Términos y condiciones</li>
+          <li>Privacidad y datos</li>
+          <li>Cookies</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>CONTÁCTANOS</h3>
+        <p>info@altusplay.com<br>Medellín, Colombia</p>
+      </div>
+    </section>
+    <p>&copy; 2025 ALTUSPLAY - Todos los derechos reservados</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
