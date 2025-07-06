@@ -1,7 +1,5 @@
-//console.log("Script cargado correctamente ✅");
-
-// Funcionalidad para sliders (dots)
 document.addEventListener("DOMContentLoaded", function () {
+  // Funcionalidad para sliders (dots)
   document.querySelectorAll(".dots").forEach(dotContainer => {
     const sliderId = dotContainer.dataset.slider;
     const slider = document.getElementById(sliderId);
@@ -46,38 +44,30 @@ document.addEventListener("DOMContentLoaded", function () {
   if (toggleBtn && nav) {
     toggleBtn.addEventListener("click", () => {
       nav.classList.toggle("active");
-      console.log("Menú hamburguesa activado");
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("active");
+      });
     });
   } else {
     console.warn("⚠️ Elementos del menú no encontrados.");
   }
-});
 
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    document.querySelector(".nav-links").classList.remove("active");
-  });
-});
-
-// Funcionalidad para flip card
-  document.querySelectorAll('.flip-card').forEach(card => {
-    card.addEventListener('click', () => {
-      card.classList.toggle('flipped');
+  // Flip cards (por si usas más adelante)
+  document.querySelectorAll(".flip-card").forEach(card => {
+    card.addEventListener("click", () => {
+      card.classList.toggle("flipped");
     });
   });
-  
-// ✅ Funcionalidad para selección de fecha (sección reservas)
+
+  // Selección de fechas (reservas)
   document.querySelectorAll(".fechas button").forEach(btn => {
     btn.addEventListener("click", () => {
       document.querySelectorAll(".fechas button").forEach(b => b.classList.remove("activo"));
       btn.classList.add("activo");
     });
-  });
-});
-
-// Cierra el menú en mobile al hacer clic en un link
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    document.querySelector(".nav-links").classList.remove("active");
   });
 });
