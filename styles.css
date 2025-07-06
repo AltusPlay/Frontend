@@ -1,21 +1,26 @@
+/* ============================================
+   VARIABLES DE COLOR
+============================================ */
 :root {
-  /* 🌊 Tonos Azules Principales */
-  --cerulean:         #0cbdd5;  /* Azul cerúleo */
-  --matisse:          #2474ae;  /* Azul matisse */
-  --half-baked:       #0a97a8;  /* Azul pastel */
-  --blue-zodiac:      #0e4c85;  /* Azul profundo */
-  --blue-zodiac-dark: #0f2747;  /* Azul muy oscuro */
+  --cerulean:         #0cbdd5;
+  --matisse:          #2474ae;
+  --half-baked:       #0a97a8;
+  --blue-zodiac:      #0e4c85;
+  --blue-zodiac-dark: #0f2747;
+  --firefly:          #09141d;
+  --bon-jour:         #e0dcdc;
+  --geyser:           #d9e0e3;
+  --abbey:            #4c4f53;
+  --white:            #ffffff;
+}
 
-  /* 🌑 Fondos Oscuros */
-  --firefly:          #09141d;  /* Azul verdoso muy oscuro */
-
-  /* 🎨 Neutros y Grises */
-  --bon-jour:         #e0dcdc;  /* Gris claro elegante */
-  --geyser:           #d9e0e3;  /* Gris azulado claro */
-  --abbey:            #4c4f53;  /* Gris oscuro */
-
-  /* ⚪️ Blanco puro */
-  --white:            #ffffff;  /* Blanco puro */
+/* ============================================
+   ESTILOS BASE
+============================================ */
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,41 +28,38 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: var(--firefly);
   color: white;
-  overflow-x: hidden; /* evita desplazamiento horizontal */
+  overflow-x: hidden;
 }
 
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* ============================================
+   HEADER + NAVEGACIÓN
+============================================ */
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* ✅ centra verticalmente todos los hijos */
-  padding: 0.8rem 2rem; /* 🔄 ajusta margen superior/inferior uniforme */
+  align-items: center;
+  padding: 0.8rem 2rem;
   background-color: var(--firefly);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.logo img {
-  height: 70px;
-  align-items: center; /* ✅ alinea verticalmente el logo y el texto */
-  display: block;
-}
-
 .logo {
   display: flex;
-  align-items: center; /* ✅ alinea verticalmente el logo y el texto */
+  align-items: center;
   gap: 0.5rem;
+}
+
+.logo img {
+  height: 70px;
+  display: block;
 }
 
 .logo-text {
   display: flex;
-  flex-direction: column; /* 🔥 hace que los elementos estén uno debajo del otro */
+  flex-direction: column;
+  justify-content: center;
   line-height: 1;
 }
 
@@ -69,7 +71,7 @@ header {
 
 .logo-text .subtitle {
   font-size: 1rem;
-  color: var(--bon-jour); /* Gris claro elegante */
+  color: var(--bon-jour);
   letter-spacing: 1px;
   font-weight: 600;
   margin-top: 2px;
@@ -82,6 +84,34 @@ nav a {
   font-weight: bold;
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links a,
+.nav-links a:visited,
+.nav-links a:focus,
+.nav-links a:active {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.logo h1 a,
+.logo h1 a:visited,
+.logo h1 a:focus,
+.logo h1 a:active {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* ============================================
+   HERO
+============================================ */
 .hero {
   position: relative;
   color: white;
@@ -141,21 +171,9 @@ nav a {
   color: white;
 }
 
-.contenido {
-  display: flex;
-  justify-content: space-around;
-  padding: 4rem 2rem;
-  flex-wrap: wrap;
-  background-color: var(--firefly);
-}
-
-.col {
-  width: 300px;
-  margin: 1rem;
-}
-
-
-/* SECCIÓN DESTACADAS */
+/* ============================================
+   SECCIÓN DESTACADAS
+============================================ */
 .seccion-cards {
   display: flex;
   justify-content: space-around;
@@ -233,43 +251,36 @@ nav a {
   background-color: var(--cerulean);
 }
 
-/* Animación */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
+/* ============================================
+   CONTENIDO Y PIE DE PÁGINA
+============================================ */
+.contenido {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  background-color: var(--firefly);
 }
 
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
+.col {
+  width: 300px;
+  margin: 1rem;
 }
 
-@media (max-width: 1400px) {
+footer {
+  background-color: var(--firefly);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ============================================
+   MEDIA QUERIES
+============================================ */
+@media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: var(--white);
-    cursor: pointer;
   }
 
   .nav-links {
@@ -283,11 +294,11 @@ nav a {
   }
 
   .nav-links.active {
-    max-height: 500px; /* suficiente para todos los enlaces */
+    max-height: 500px;
     padding: 1rem 2rem;
   }
 
-  .nav-links{
+  .nav-links {
     margin: 0.5rem 0;
     display: block;
   }
@@ -301,22 +312,7 @@ nav a {
   }
 }
 
-.nav-links a,
-.nav-links a:visited,
-.nav-links a:focus,
-.nav-links a:active {
-  color: var(--white);  /* o var(--bon-jour) si quieres gris claro */
-  text-decoration: none;
-}
-.logo h1 a,
-.logo h1 a:visited,
-.logo h1 a:focus,
-.logo h1 a:active {
-  color: var(--white);       /* o var(--cerulean) si quieres mantenerlo azul claro */
-  text-decoration: none;     /* sin subrayado */
-}
 @media (max-width: 480px) {
-  /* 1. Ajuste del logo y título */
   .logo h1 {
     font-size: 1.4rem;
   }
@@ -325,7 +321,6 @@ nav a {
     height: 40px;
   }
 
-  /* 2. Ajuste del lema hero */
   .hero h2 {
     font-size: 2.2rem;
     line-height: 1.2;
@@ -341,7 +336,6 @@ nav a {
     min-height: auto;
   }
 
-  /* 3. Ajuste de botones */
   .hero-buttons {
     display: flex;
     flex-direction: column;
@@ -354,26 +348,30 @@ nav a {
     font-size: 1.2rem;
     padding: 0.75rem 0;
   }
-}.beneficio {
-  opacity: 1 !important;
-  transform: none !important;
-}@media (min-width: 769px) {
+}
+
+@media (min-width: 768px) {
   .logo h1 {
-    font-size: 1.8rem; /* o 2rem si lo quieres más grande */
+    font-size: 1.8rem;
   }
 
   .nav-links a {
     font-size: 1.1rem;
     margin: 0 0.8rem;
-	font-weight: bold;
+    font-weight: bold;
   }
-
 }
 
-footer {
-  background-color: var(--firefly);
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #666;
+/* ============================================
+   ANIMACIONES
+============================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
