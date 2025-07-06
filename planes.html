@@ -1,113 +1,71 @@
-<!DOCTYPE html> <!-- Indica que este es un documento HTML5 -->
-<html lang="es"> <!-- Define el idioma como español -->
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptabilidad en móviles -->
-  <title>AltusPlay | Más que jugar</title> <!-- Título de la página que aparece en el navegador -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planes | AltusPlay</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
-  <link rel="stylesheet" href="planes.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> <!-- Fuente Inter desde Google Fonts -->
-  </head>
-  
-<header>
-  <div class="logo">
-    <img src="Logo2.png" alt="Logo AltusPlay">
-    <h1><a href="index.html">ALTUSPLAY</a></h1>
-  </div>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
 
-  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-
-  <nav class="nav-links">
-    <a href="nosotros.html">Nosotros</a>
-    <a href="soluciones.html">Soluciones</a>
-    <a href="reservas.html">Reservas</a>
-    <a href="replays.html">Mi Replays</a>
-    <a href="planes.html">planes</a>
-    <a href="Comunidad.html">Comunidad</a>
-    <button class="btn-login">Login | Register</button>
-  </nav>
-</header>
-
-<section class="seccion-precios" id="precios">
-  <h2 class="titulo-seccion">Planes</h2>
-  <div class="contenedor-planes">
-    
-    <!-- Invitado -->
-    <div class="plan">
-      <h3>Invitado</h3>
-      <p class="subtitulo">Pago por uso</p>
-      <p class="precio">Variable</p>
-      <ul>
-        <li>Acceso puntual</li>
-        <li>Corrección de repeticiones</li>
-      </ul>
-      <button class="btn-plan">Comenzar</button>
+<body>
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="logo">
+      <img src="Logo2.png" alt="Logo AltusPlay" />
+      <div class="logo-text">
+        <h1><a href="index.html">ALTUSPLAY</a></h1>
+        <span class="subtitle">TENIS DE MESA</span>
+      </div>
     </div>
 
-    <!-- Suscriptor -->
-    <div class="plan destacado">
-      <h3>Suscriptor</h3>
-      <p class="subtitulo">Plan mensual</p>
-      <p class="precio">$19 <span>/ mes</span></p>
-      <ul>
-        <li>Reservas ilimitadas</li>
-        <li>Entrenador personal</li>
-        <li>Análisis detallado</li>
-      </ul>
-      <button class="btn-plan suscribir">Suscribirse</button>
-    </div>
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
 
-    <!-- Entrenador -->
-    <div class="plan">
-      <h3>Entrenador</h3>
-      <p class="subtitulo">Gestión de alumnos</p>
-      <p class="precio">$29 <span>/ mes</span></p>
-      <ul>
-        <li>Administración de alumnos</li>
-        <li>Visualización de juego</li>
-      </ul>
-      <button class="btn-plan">Comenzar</button>
-    </div>
+    <nav class="nav-links">
+      <a href="nosotros.html">Nosotros</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="replays.html">Replays</a>
+      <a href="planes.html" class="active">Planes</a>
+    </nav>
+  </header>
 
-    <!-- Empresa -->
-    <div class="plan">
-      <h3>Empresa</h3>
-      <p class="subtitulo">Bienestar corporativo</p>
-      <p class="precio">$49 <span>/ mes</span></p>
-      <ul>
-        <li>Reservas centralizadas</li>
-        <li>Comparativas e informes</li>
-      </ul>
-      <button class="btn-plan">Comenzar</button>
+  <!-- ======================= HERO ======================= -->
+  <main class="hero seccion-planes">
+    <div class="hero-content">
+      <h2>Planes</h2>
+      <p>Elige la opción que más se ajusta a tu ritmo y estilo de juego.</p>
     </div>
+  </main>
 
-  </div>
-</section>
-<!-- SECCION FOOTER --> <!-- SECCION FOOTER --> <!-- SECCION FOOTER -->
-
-  <section class="contenido"> <!-- Sección de contenido informativo -->
-    <div class="col"> <!-- Primera columna: Qué es AltusPlay -->
-      <h3>GENERAL</h3> <!-- Título de la sección -->
-      <p>Una plataforma deportiva pensada para ti, donde la inteligencia deportiva se convierte en tu aliado.</p> <!-- Descripción -->
-    </div>
-    <div class="col"> <!-- Segunda columna: Beneficios y servicios -->
-      <h3>LEGAL</h3> <!-- Título de la sección -->
-      <ul> <!-- Lista de beneficios -->
-        <li>Análisis deportivo en tiempo real</li> <!-- Item 1 -->
-        <li>Soporte personalizado</li> <!-- Item 2 -->
-        <li>Repeticiones automáticas</li> <!-- Item 3 -->
-      </ul>
-    </div>
-    <div class="col"> <!-- Tercera columna: Tecnología -->
-      <h3>CONTACTANOS</h3> <!-- Título de la sección -->
-      <p>Integración con cámaras, tablets, pantallas inteligentes y más.</p> <!-- Descripción -->
-    </div>
+  <!-- ======================= CONTENIDO (vacío por ahora) ======================= -->
+  <section class="contenido">
+    <!-- Aquí irá la tabla comparativa o detalles de los planes -->
   </section>
 
-  <footer> <!-- Pie de página -->
-    <p>&copy; 2025 ALTUSPLAY - Todos los derechos reservados</p> <!-- Derechos de autor -->
+  <!-- ======================= FOOTER ======================= -->
+  <footer>
+    <section class="contenido">
+      <div class="col">
+        <h3>GENERAL</h3>
+        <p>Una plataforma deportiva pensada para ti, donde la inteligencia deportiva se convierte en tu aliado.</p>
+      </div>
+      <div class="col">
+        <h3>LEGAL</h3>
+        <ul>
+          <li>Términos y condiciones</li>
+          <li>Privacidad y datos</li>
+          <li>Cookies</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>CONTÁCTANOS</h3>
+        <p>info@altusplay.com<br>Medellín, Colombia</p>
+      </div>
+    </section>
+    <p>&copy; 2025 ALTUSPLAY - Todos los derechos reservados</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
