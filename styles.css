@@ -2,16 +2,23 @@
    VARIABLES DE COLOR
 ============================================ */
 :root {
-  --cerulean:         #0cbdd5;
-  --matisse:          #2474ae;
-  --half-baked:       #0a97a8;
-  --blue-zodiac:      #0e4c85;
-  --blue-zodiac-dark: #0f2747;
-  --firefly:          #09141d;
-  --bon-jour:         #e0dcdc;
-  --geyser:           #d9e0e3;
-  --abbey:            #4c4f53;
-  --white:            #ffffff;
+  /* 🌊 Tonos Azules Principales */
+  --cerulean:         #0cbdd5;  /* Azul cerúleo */
+  --matisse:          #2474ae;  /* Azul matisse */
+  --half-baked:       #0a97a8;  /* Azul pastel */
+  --blue-zodiac:      #0e4c85;  /* Azul profundo */
+  --blue-zodiac-dark: #0f2747;  /* Azul muy oscuro */
+
+  /* 🌑 Fondos Oscuros */
+  --firefly:          #09141d;  /* Azul verdoso muy oscuro */
+
+  /* 🎨 Neutros y Grises */
+  --bon-jour:         #e0dcdc;  /* Gris claro elegante */
+  --geyser:           #d9e0e3;  /* Gris azulado claro */
+  --abbey:            #4c4f53;  /* Gris oscuro */
+
+  /* ⚪️ Blanco puro */
+  --white:            #ffffff;  /* Blanco puro */
 }
 
 /* ============================================
