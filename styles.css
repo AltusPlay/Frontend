@@ -23,6 +23,13 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: var(--firefly);
   color: white;
+  overflow-x: hidden; /* evita desplazamiento horizontal */
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -325,6 +332,7 @@ body {
 }
 
 .flip-card {
+  position: relative;
   flex: 1 1 260px;
   max-width: 260px;
   height: 300px;
