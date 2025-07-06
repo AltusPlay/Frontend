@@ -5,80 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nosotros | AltusPlay</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css" />       <!-- Estilos base (barra de navegación, etc.) -->
-  <link rel="stylesheet" href="nosotros.css" />     <!-- Estilos específicos de esta página -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> <!-- Fuente Inter desde Google Fonts -->
-    <!-- Íconos de Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-  <!-- Barra de navegación -->
- <header>
-  <div class="logo">
-    <img src="Logo2.png" alt="Logo AltusPlay">
-    <h1><a href="index.html">ALTUSPLAY</a></h1>
-  </div>
-
-  <!-- Botón hamburguesa visible solo en móvil -->
-  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-
-  <!-- Menú de navegación -->
-  <nav class="nav-links">
-    <a href="nosotros.html">Nosotros</a>
-    <a href="soluciones.html">Soluciones</a>
-    <a href="reservas.html">Reservas</a>
-    <a href="replays.html">Mi Replays</a>
-    <a href="planes.html">planes</a>
-    <a href="Comunidad.html">Comunidad</a>
-    <button class="btn-login">Login | Register</button>
-  </nav>
-
-  <section class="sobre-nosotros">
-    <div class="sobre-texto">
-      <h2>Sobre nosotros</h2>
-      <p>
-        Con nuestra innovadora plataforma, estamos redefiniendo la práctica de deportes de raqueta,
-        integrando tecnología y análisis de datos para mejorar la experiencia de cada jugador.
-      </p>
-
-      <div class="caracteristicas">
-        <div class="caracteristica"><i class="fas fa-lightbulb"></i> Innovación</div>
-        <div class="caracteristica"><i class="fas fa-mouse"></i> Tecnología</div>
-        <div class="caracteristica"><i class="fas fa-chart-bar"></i> Análisis</div>
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="logo">
+      <img src="Logo2.png" alt="Logo AltusPlay" />
+      <div class="logo-text">
+        <h1><a href="index.html">ALTUSPLAY</a></h1>
+        <span class="subtitle">TENIS DE MESA</span>
       </div>
     </div>
 
-    <div class="sobre-imagenes">
-      <img src="https://cdn.pixabay.com/photo/2017/08/06/00/15/ping-pong-2584282_1280.jpg" alt="Jugador de ping pong">
-      <img src="https://cdn-icons-png.flaticon.com/512/7475/7475821.png" alt="Laptop con análisis de datos" style="max-width: 300px;">
-    </div>
-  </section>
-  
-  <!-- SECCION FOOTER --> <!-- SECCION FOOTER --> <!-- SECCION FOOTER -->
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
 
-  <section class="contenido"> <!-- Sección de contenido informativo -->
-    <div class="col"> <!-- Primera columna: Qué es AltusPlay -->
-      <h3>GENERAL</h3> <!-- Título de la sección -->
-      <p>Una plataforma deportiva pensada para ti, donde la inteligencia deportiva se convierte en tu aliado.</p> <!-- Descripción -->
+    <nav class="nav-links">
+      <a href="nosotros.html" class="active">Nosotros</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="replays.html">Replays</a>
+      <a href="planes.html">Planes</a>
+    </nav>
+  </header>
+
+  <!-- ======================= HERO ======================= -->
+  <main class="hero seccion-nosotros">
+    <div class="hero-content">
+      <h2>Nosotros</h2>
+      <p>Conoce quiénes somos y por qué hacemos esto posible</p>
     </div>
-    <div class="col"> <!-- Segunda columna: Beneficios y servicios -->
-      <h3>LEGAL</h3> <!-- Título de la sección -->
-      <ul> <!-- Lista de beneficios -->
-        <li>Análisis deportivo en tiempo real</li> <!-- Item 1 -->
-        <li>Soporte personalizado</li> <!-- Item 2 -->
-        <li>Repeticiones automáticas</li> <!-- Item 3 -->
-      </ul>
-    </div>
-    <div class="col"> <!-- Tercera columna: Tecnología -->
-      <h3>CONTACTANOS</h3> <!-- Título de la sección -->
-      <p>Integración con cámaras, tablets, pantallas inteligentes y más.</p> <!-- Descripción -->
-    </div>
+  </main>
+
+  <!-- ======================= CONTENIDO (vacío por ahora) ======================= -->
+  <section class="contenido">
+    <!-- Aquí puedes agregar Misión, Visión, Historia, Equipo, etc. -->
   </section>
 
-  <footer> <!-- Pie de página -->
-    <p>&copy; 2025 ALTUSPLAY - Todos los derechos reservados</p> <!-- Derechos de autor -->
+  <!-- ======================= FOOTER ======================= -->
+  <footer>
+    <section class="contenido">
+      <div class="col">
+        <h3>GENERAL</h3>
+        <p>Una plataforma deportiva pensada para ti, donde la inteligencia deportiva se convierte en tu aliado.</p>
+      </div>
+      <div class="col">
+        <h3>LEGAL</h3>
+        <ul>
+          <li>Términos y condiciones</li>
+          <li>Privacidad y datos</li>
+          <li>Cookies</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>CONTÁCTANOS</h3>
+        <p>info@altusplay.com<br>Medellín, Colombia</p>
+      </div>
+    </section>
+    <p>&copy; 2025 ALTUSPLAY - Todos los derechos reservados</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
