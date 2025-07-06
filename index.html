@@ -1,133 +1,134 @@
-<!DOCTYPE html> <!-- Indica que este es un documento HTML5 -->
-<html lang="es"> <!-- Define el idioma como español -->
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptabilidad en móviles -->
-  <title>AltusPlay | Más que jugar</title> <!-- Título de la página que aparece en el navegador -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AltusPlay | Más que jugar</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> <!-- Fuente Inter desde Google Fonts -->
-  </head>
-<body> <!-- Comienzo del cuerpo de la página -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
 
-  <!-- BARRA DE NAVEGACION -->
-<header>
-  <div class="logo">
-  <img src="Logo2.png" alt="Logo AltusPlay" />
-  <div class="logo-text">
-    <h1><a href="index.html">ALTUSPLAY</a></h1>
-    <span class="subtitle">TENIS DE MESA</span>
-  </div>
-</div>
+<body>
 
-  <!-- BOTON HAMBURGUESA -->
-  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-
-  <!-- Contenedor de navegación (importante que sea un div, no solo nav si usas flex con columna) -->
-  <div class="nav-links">
-    <a href="nosotros.html">Nosotros</a>
-    <!--<a href="#Soluciones">Soluciones</a> Esta seccion estara para mas adelante --> 
-    <a href="reservas.html">Reservas</a>
-    <a href="replays.html">Replays</a>
-    <a href="planes.html">Planes</a>
-    <!--<a href="Comunidad.html">Comunidad</a> Esta seccion estara para mas adelante --> 
-  </div>
-</header>
-  <section class="hero">
-  <video autoplay muted loop playsinline class="hero-video">
-    <source src="video.mp4" type="video/mp4">
-    Tu navegador no soporta video HTML5.
-  </video>
-  <div class="hero-content">
-   <h2>Juega más inteligente,<br>llega más alto</h2>
-    <p>La nueva era del deporte comienza con datos, comunidad y tecnología.</p>
-    <div class="hero-buttons">
-      <a href="#reservas" class="btn-secondary">Reservar Tú Mesa</a>
-    </div>
-  </div>
-</section>
-
-<!-- SECCION DE DESTACADAS --> 
-
-<section id="destacados" class="seccion-cards">
-
-  <!-- CARD 1: ¿Qué es AltusPlay? -->
-  <div class="card">
-    <h3>¿Qué es AltusPlay?</h3>
-    <div class="slider" id="slider1">
-      <div class="slide active">Una plataforma que fusiona deporte con tecnología inteligente.</div>
-      <div class="slide">AltusPlay analiza tu rendimiento y lo transforma en progreso visible.</div>
-      <div class="slide">Optimiza tu juego con datos, repeticiones y comunidad conectada.</div>
-    </div>
-    <div class="dots" data-slider="slider1">
-      <span class="dot active" data-index="0"></span>
-      <span class="dot" data-index="1"></span>
-      <span class="dot" data-index="2"></span>
-    </div>
-  </div>
-
-  <!-- CARD 2: Videos explicativos -->
-  <div class="card">
-    <h3>Top Replays</h3>
-    <div class="slider" id="slider2">
-      <div class="slide active">
-        <video src="video1.mp4" controls poster="preview1.jpg"></video>
-      </div>
-      <div class="slide">
-        <video src="video2.mp4" controls poster="preview2.jpg"></video>
-      </div>
-      <div class="slide">
-        <video src="video3.mp4" controls poster="preview3.jpg"></video>
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="logo">
+      <img src="Logo2.png" alt="Logo AltusPlay" />
+      <div class="logo-text">
+        <h1><a href="index.html">ALTUSPLAY</a></h1>
+        <span class="subtitle">TENIS DE MESA</span>
       </div>
     </div>
-    <div class="dots" data-slider="slider2">
-      <span class="dot active" data-index="0"></span>
-      <span class="dot" data-index="1"></span>
-      <span class="dot" data-index="2"></span>
-    </div>
-  </div>
 
-  <!-- CARD 3: Testimonios -->
-  <div class="card">
-    <h3>Noticias</h3>
-    <div class="slider" id="slider3">
-      <div class="slide active">“AltusPlay revolucionó la forma en que entreno.”<br><strong>- Camila</strong></div>
-      <div class="slide">“Puedo ver mis repeticiones desde el celular en segundos.”<br><strong>- Esteban</strong></div>
-      <div class="slide">“Siento que por fin juego con propósito.”<br><strong>- Laura</strong></div>
-    </div>
-    <div class="dots" data-slider="slider3">
-      <span class="dot active" data-index="0"></span>
-      <span class="dot" data-index="1"></span>
-      <span class="dot" data-index="2"></span>
-    </div>
-  </div>
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
 
-</section>
+    <nav class="nav-links">
+      <a href="nosotros.html">Nosotros</a>
+      <!-- <a href="#Soluciones">Soluciones</a> -->
+      <a href="reservas.html">Reservas</a>
+      <a href="replays.html">Replays</a>
+      <a href="planes.html">Planes</a>
+      <!-- <a href="Comunidad.html">Comunidad</a> -->
+    </nav>
+  </header>
 
-<!-- SECCION FOOTER --> <!-- SECCION FOOTER --> <!-- SECCION FOOTER -->
+  <!-- ======================= HERO ========================= -->
+  <main class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="video.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+    <div class="hero-content">
+      <h2>Juega más inteligente,<br>llega más alto</h2>
+      <p>La nueva era del deporte comienza con datos, comunidad y tecnología.</p>
+      <div class="hero-buttons">
+        <a href="#reservas" class="btn-secondary">Reservar Tú Mesa</a>
+      </div>
+    </div>
+  </main>
 
-  <section class="contenido"> <!-- Sección de contenido informativo -->
-    <div class="col"> <!-- Primera columna: Qué es AltusPlay -->
-      <h3>GENERAL</h3> <!-- Título de la sección -->
-      <p>Una plataforma deportiva pensada para ti, donde la inteligencia deportiva se convierte en tu aliado.</p> <!-- Descripción -->
+  <!-- ======================= DESTACADOS =================== -->
+  <section id="destacados" class="seccion-cards">
+
+    <!-- CARD 1: ¿Qué es AltusPlay? -->
+    <div class="card">
+      <h3>¿Qué es AltusPlay?</h3>
+      <div class="slider" id="slider1">
+        <div class="slide active">Una plataforma que fusiona deporte con tecnología inteligente.</div>
+        <div class="slide">AltusPlay analiza tu rendimiento y lo transforma en progreso visible.</div>
+        <div class="slide">Optimiza tu juego con datos, repeticiones y comunidad conectada.</div>
+      </div>
+      <div class="dots" data-slider="slider1">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
     </div>
-    <div class="col"> <!-- Segunda columna: Beneficios y servicios -->
-      <h3>LEGAL</h3> <!-- Título de la sección -->
-      <ul> <!-- Lista de beneficios -->
-        <li>Análisis deportivo en tiempo real</li> <!-- Item 1 -->
-        <li>Soporte personalizado</li> <!-- Item 2 -->
-        <li>Repeticiones automáticas</li> <!-- Item 3 -->
-      </ul>
+
+    <!-- CARD 2: Top Replays -->
+    <div class="card">
+      <h3>Top Replays</h3>
+      <div class="slider" id="slider2">
+        <div class="slide active">
+          <video src="video1.mp4" controls poster="preview1.jpg"></video>
+        </div>
+        <div class="slide">
+          <video src="video2.mp4" controls poster="preview2.jpg"></video>
+        </div>
+        <div class="slide">
+          <video src="video3.mp4" controls poster="preview3.jpg"></video>
+        </div>
+      </div>
+      <div class="dots" data-slider="slider2">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
     </div>
-    <div class="col"> <!-- Tercera columna: Tecnología -->
-      <h3>CONTACTANOS</h3> <!-- Título de la sección -->
-      <p>Integración con cámaras, tablets, pantallas inteligentes y más.</p> <!-- Descripción -->
+
+    <!-- CARD 3: Noticias -->
+    <div class="card">
+      <h3>Noticias</h3>
+      <div class="slider" id="slider3">
+        <div class="slide active">“AltusPlay revolucionó la forma en que entreno.”<br><strong>- Camila</strong></div>
+        <div class="slide">“Puedo ver mis repeticiones desde el celular en segundos.”<br><strong>- Esteban</strong></div>
+        <div class="slide">“Siento que por fin juego con propósito.”<br><strong>- Laura</strong></div>
+      </div>
+      <div class="dots" data-slider="slider3">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
     </div>
+
   </section>
 
-  <footer> <!-- Pie de página -->
-    <p>&copy; 2025 ALTUSPLAY - Todos los derechos reservados</p> <!-- Derechos de autor -->
+  <!-- ======================= INFO FINAL =================== -->
+  <footer class="footer-contenido">
+    <section class="contenido">
+      <div class="col">
+        <h3>GENERAL</h3>
+        <p>Una plataforma deportiva pensada para ti, donde la inteligencia deportiva se convierte en tu aliado.</p>
+      </div>
+      <div class="col">
+        <h3>LEGAL</h3>
+        <ul>
+          <li>Análisis deportivo en tiempo real</li>
+          <li>Soporte personalizado</li>
+          <li>Repeticiones automáticas</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>CONTÁCTANOS</h3>
+        <p>Integración con cámaras, tablets, pantallas inteligentes y más.</p>
+      </div>
+    </section>
+
+    <!-- ======================= FOOTER ======================= -->
+    <p>&copy; 2025 ALTUSPLAY - Todos los derechos reservados</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
