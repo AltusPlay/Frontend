@@ -283,14 +283,42 @@ nav a {
 .nosotros-contenido .texto h2 {
   font-size: 4rem;
   color: var(--cerulean);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.nosotros-contenido .texto p {
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  color: var(--bon-jour);
+.frases-nosotros ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.5rem;
 }
+
+.frases-nosotros li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+  color: var(--bon-jour);
+  position: relative;
+  padding-left: 2rem;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.frases-nosotros li::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  color: var(--cerulean);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.frases-nosotros li:nth-child(1) { animation-delay: 0.2s; }
+.frases-nosotros li:nth-child(2) { animation-delay: 0.4s; }
+.frases-nosotros li:nth-child(3) { animation-delay: 0.6s; }
+.frases-nosotros li:nth-child(4) { animation-delay: 0.8s; }
+.frases-nosotros li:nth-child(5) { animation-delay: 1.0s; }
+.frases-nosotros li:nth-child(6) { animation-delay: 1.2s; }
+
 
 .nosotros-contenido .imagen {
   flex: 1 1 300px;
