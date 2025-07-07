@@ -413,11 +413,62 @@ nav a {
 }
 
 /* ============================================
-   IDENTIDAD Y POLÍTICAS
+   IDENTIDAD DE ALTUSPLAY - DOBLE BLOQUE
+============================================ */
+.identidad-altusplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  padding: 5rem 2rem;
+  background-color: var(--firefly);
+}
+
+.identidad-bloque {
+  flex: 1 1 400px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.identidad-bloque img {
+  width: 160px;
+  margin-bottom: 1.5rem;
+}
+
+.identidad-bloque h3 {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.identidad-bloque p {
+  font-size: 1.1rem;
+  color: var(--bon-jour);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .identidad-altusplay {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .identidad-bloque {
+    max-width: 90%;
+  }
+}
+
+/* ============================================
+   POLÍTICAS
 ============================================ */
 
 /* 🔹 Contenedores de identidad y políticas */
-.nosotros-identidad, .nosotros-politicas {
+.nosotros-politicas {
   background-color: var(--firefly);
   padding: 4rem 2rem;
   text-align: center;
@@ -426,14 +477,13 @@ nav a {
 }
 
 /* 🔹 Títulos */
-.nosotros-identidad h2, .nosotros-politicas h2 {
+.nosotros-politicas h2 {
   font-size: 2rem;
   color: var(--white);
   margin-bottom: 1rem;
 }
 
 /* 🔹 Párrafos y lista */
-.nosotros-identidad p,
 .nosotros-politicas p,
 .nosotros-politicas ul li {
   color: var(--bon-jour);
