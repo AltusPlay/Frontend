@@ -294,7 +294,7 @@ nav a {
 /* 🔹 Párrafos de introducción */
 .nosotros-contenido .texto p {
   line-height: 1.6;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: var(--bon-jour);
 }
 
@@ -309,6 +309,31 @@ nav a {
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
+
+/* 🔹 Lista de frases destacadas en la sección 'Sobre nosotros' */
+.frases-nosotros ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+}
+
+.frases-nosotros ul li {
+  font-size: 1.3rem;         /* ⬅️ Aumenta el tamaño del texto */
+  line-height: 1.8;          /* ⬅️ Mejora la legibilidad */
+  margin-bottom: 1.5rem;     /* ⬅️ Espacio entre frases */
+  color: var(--white);       /* ⬅️ Texto blanco para mejor contraste */
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.frases-nosotros ul li::before {
+  content: "•";
+  font-size: 1.4rem;
+  color: var(--cerulean);
+  line-height: 1.2;
+}
+
 
 /* ============================================
    VALORES (Innovación, Tecnología, Análisis)
