@@ -400,6 +400,25 @@ nav a {
   align-items: center;
   padding: 5rem 2rem;
   background-color
+  
+  /* Ajuste visual específico para el hero de la sección "Nosotros" */
+.seccion-nosotros .hero-content h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.seccion-nosotros .hero-content p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.seccion-nosotros .hero-content h2,
+.seccion-nosotros .hero-content p {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
 /* ============================================
    CONTENIDO Y PIE DE PÁGINA
 ============================================ */
