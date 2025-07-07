@@ -2,16 +2,23 @@
    VARIABLES DE COLOR
 ============================================ */
 :root {
-  --cerulean:         #0cbdd5;
-  --matisse:          #2474ae;
-  --half-baked:       #0a97a8;
-  --blue-zodiac:      #0e4c85;
-  --blue-zodiac-dark: #0f2747;
-  --firefly:          #09141d;
-  --bon-jour:         #e0dcdc;
-  --geyser:           #d9e0e3;
-  --abbey:            #4c4f53;
-  --white:            #ffffff;
+  /* 🌊 Tonos Azules Principales */
+  --cerulean:         #0cbdd5;  /* Azul cerúleo */
+  --matisse:          #2474ae;  /* Azul matisse */
+  --half-baked:       #0a97a8;  /* Azul pastel */
+  --blue-zodiac:      #0e4c85;  /* Azul profundo */
+  --blue-zodiac-dark: #0f2747;  /* Azul muy oscuro */
+
+  /* 🌑 Fondos Oscuros */
+  --firefly:          #09141d;  /* Azul verdoso muy oscuro */
+
+  /* 🎨 Neutros y Grises */
+  --bon-jour:         #e0dcdc;  /* Gris claro elegante */
+  --geyser:           #d9e0e3;  /* Gris azulado claro */
+  --abbey:            #4c4f53;  /* Gris oscuro */
+
+  /* ⚪️ Blanco puro */
+  --white:            #ffffff;  /* Blanco puro */
 }
 
 /* ============================================
@@ -96,7 +103,11 @@ nav a {
 .nav-links a,
 .nav-links a:visited,
 .nav-links a:focus,
-.nav-links a:active,
+.nav-links a:active {
+  color: var(--white);
+  text-decoration: none;
+}
+
 .logo h1 a,
 .logo h1 a:visited,
 .logo h1 a:focus,
@@ -106,7 +117,7 @@ nav a {
 }
 
 /* ============================================
-   HERO GENERAL
+   HERO
 ============================================ */
 .hero {
   position: relative;
@@ -148,30 +159,109 @@ nav a {
   margin-bottom: 2rem;
 }
 
+.hero-buttons a {
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: var(--matisse);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--cerulean);
+  color: white;
+}
+
 /* ============================================
-   SECCIÓN NOSOTROS
+   SECCIÓN DESTACADAS
 ============================================ */
-.hero-nosotros {
-  min-height: 60vh;
-  background-color: var(--firefly);
+.seccion-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  background-color: var(--geyser);
+  gap: 2rem;
 }
 
-.seccion-nosotros .hero-content h2,
-.seccion-nosotros .hero-content p {
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+.card {
+  background: radial-gradient(circle at top left, var(--blue-zodiac), var(--firefly));
+  border-radius: 20px;
+  padding: 2rem;
+  color: var(--bon-jour);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.seccion-nosotros .hero-content h2 {
-  font-size: 5rem;
-  font-weight: 800;
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--cerulean);
+}
+
+.card video {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 0.5rem;
+}
+
+.slider {
+  position: relative;
+  height: 120px;
+  overflow: hidden;
   margin-bottom: 1rem;
 }
 
-.seccion-nosotros .hero-content p {
-  font-size: 2rem;
-  color: var(--white);
+.slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
 }
 
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 0.5rem;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: var(--abbey);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: var(--cerulean);
+}
+
+
+/* ============================================
+   SECCIÓN NOSOTROS
+============================================ */
 .nosotros-intro {
   padding: 4rem 2rem;
   background-color: var(--firefly);
@@ -192,33 +282,145 @@ nav a {
 
 .nosotros-contenido .texto h2 {
   font-size: 4rem;
-  color: var(--white);
-  margin-bottom: 1.5rem;
+  color: var(--cerulean);
+  margin-bottom: 1rem;
 }
 
-.frases-nosotros ul {
+.nosotros-contenido .texto p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--bon-jour);
+}
+
+.nosotros-contenido .imagen {
+  flex: 1 1 300px;
+}
+
+.nosotros-contenido .imagen img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.nosotros-valores {
+  background-color: var(--firefly);
+  padding: 4rem 2rem;
+}
+
+.nosotros-valores .valores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.nosotros-valores .valor {
+  background-color: var(--blue-zodiac-dark);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  flex: 1 1 250px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.nosotros-valores .valor img {
+  height: 160px;
+  margin-bottom: 0.5rem;
+}
+
+.nosotros-valores .valor h3 {
+  color: var(--cerulean);
+  margin-bottom: 0.5rem;
+}
+
+.nosotros-valores .valor p {
+  font-size: 0.9rem;
+  color: var(--bon-jour);
+}
+
+.nosotros-identidad, .nosotros-politicas {
+  background-color: var(--firefly);
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nosotros-identidad h2, .nosotros-politicas h2 {
+  font-size: 2rem;
+  color: var(--cerulean);
+  margin-bottom: 1rem;
+}
+
+.nosotros-identidad p, .nosotros-politicas p, .nosotros-politicas ul li {
+  color: var(--bon-jour);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.nosotros-politicas ul {
   list-style: none;
   padding-left: 0;
-  margin-top: 1.5rem;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.frases-nosotros li {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1.8rem;
-  color: var(--bon-jour);
-  position: relative;
-  padding-left: 2rem;
+.nosotros-politicas ul li {
+  margin-bottom: 1rem;
 }
 
-.frases-nosotros li::before {
-  content: "➤";
-  position: absolute;
-  left: 0;
+.nosotros-politicas ul li strong {
   color: var(--cerulean);
-  font-weight: bold;
-  font-size: 1.2rem;
 }
+
+@media (max-width: 768px) {
+  .nosotros-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nosotros-contenido .imagen {
+    order: -1;
+  }
+
+  .nosotros-valores .valores {
+    flex-direction: column;
+  }
+}
+
+.hero-nosotros {
+  position: relative;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+  background-color: var(--firefly); /* Puedes usar transparent si es video de fondo */
+}
+  /* Ajuste visual específico para el hero de la sección "Nosotros" */
+
+.seccion-nosotros .hero-content h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.seccion-nosotros .hero-content p {
+  font-size: 2rem;
+  color: var(--white);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.seccion-nosotros .hero-content h2,
+.seccion-nosotros .hero-content p {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
 /* ============================================
    CONTENIDO Y PIE DE PÁGINA
 ============================================ */
