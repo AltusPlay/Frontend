@@ -372,7 +372,7 @@ nav a {
 /* 🔹 Títulos */
 .nosotros-identidad h2, .nosotros-politicas h2 {
   font-size: 2rem;
-  color: var(--cerulean);
+  color: var(--white);
   margin-bottom: 1rem;
 }
 
