@@ -81,7 +81,7 @@ header {
 .logo-text .subtitle {
   font-size: 1rem;
   color: var(--bon-jour);
-  letter-spacing: 1px;
+  letter-spacing: 0.7px;
   font-weight: 500;
   margin-top: 2px;
   font-weight: bold;
