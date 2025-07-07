@@ -72,7 +72,7 @@ header {
 
 /* Tamaño para el texto ALTUSPLAY */
 .logo-text h1 {
-  font-size: 5rem; /* antes 2.6rem */
+  font-size: 3rem; /* antes 2.6rem */
   color: var(--white);
   margin: 0;
   line-height: 1;
@@ -82,8 +82,9 @@ header {
   font-size: 1rem;
   color: var(--bon-jour);
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 2px;
+  font-weight: bold;
 }
 
 nav a {
@@ -102,12 +103,16 @@ nav a {
   cursor: pointer;
 }
 
+/* Tamaño para los ítems del menú */
 .nav-links a,
 .nav-links a:visited,
 .nav-links a:focus,
 .nav-links a:active {
   color: var(--white);
   text-decoration: none;
+  font-size: 1.5rem; /* antes 1.1rem */
+  font-weight: 700;
+  margin: 0 1.2rem
 }
 
 .logo h1 a,
@@ -117,14 +122,6 @@ nav a {
   color: var(--white);
   text-decoration: none;
 }
-
-/* Tamaño para los ítems del menú */
-.nav-links a {
-  font-size: 3rem; /* antes 1.1rem */
-  font-weight: 700;
-  margin: 0 1.2rem;
-}
-
 /* ============================================
    HERO
 ============================================ */
