@@ -401,13 +401,14 @@ nav a {
 
 /* 🔹 Título del valor */
 .nosotros-valores .valor h3 {
+  font-size: 2.5rem;
   color: var(--cerulean);
   margin-bottom: 0.5rem;
 }
 
 /* 🔹 Descripción del valor */
 .nosotros-valores .valor p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: var(--bon-jour);
 }
 
