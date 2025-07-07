@@ -72,7 +72,7 @@ header {
 
 /* Tamaño para el texto ALTUSPLAY */
 .logo-text h1 {
-  font-size: 3rem; /* antes 2.6rem */
+  font-size: 5rem; /* antes 2.6rem */
   color: var(--white);
   margin: 0;
   line-height: 1;
@@ -120,7 +120,7 @@ nav a {
 
 /* Tamaño para los ítems del menú */
 .nav-links a {
-  font-size: 1.4rem; /* antes 1.1rem */
+  font-size: 3rem; /* antes 1.1rem */
   font-weight: 700;
   margin: 0 1.2rem;
 }
