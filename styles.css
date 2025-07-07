@@ -447,6 +447,7 @@ nav a {
 .identidad-bloque p {
   font-size: 1.1rem;
   color: var(--bon-jour);
+  text-align: justify;
   line-height: 1.6;
   margin: 0;
 }
