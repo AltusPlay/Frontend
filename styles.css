@@ -286,7 +286,7 @@ nav a {
 
 /* 🔹 Título de la introducción */
 .nosotros-contenido .texto h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   color: var(--white);
   margin-bottom: 1rem;
 }
@@ -294,7 +294,7 @@ nav a {
 /* 🔹 Párrafos de introducción */
 .nosotros-contenido .texto p {
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   color: var(--bon-jour);
 }
 
