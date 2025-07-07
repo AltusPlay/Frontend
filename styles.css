@@ -403,13 +403,13 @@ nav a {
   
   /* Ajuste visual específico para el hero de la sección "Nosotros" */
 .seccion-nosotros .hero-content h2 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 800;
   margin-bottom: 1rem;
 }
 
 .seccion-nosotros .hero-content p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 400;
   color: var(--white);
 }
