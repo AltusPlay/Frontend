@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // ============================================
 
 document.addEventListener("DOMContentLoaded", () => {
-  const frases = document.querySelectorAll(".frases-nosotros li");
+  const frases = document.querySelectorAll(".frases-nosotros p");
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
