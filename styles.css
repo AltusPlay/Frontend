@@ -399,21 +399,22 @@ nav a {
   justify-content: center;
   align-items: center;
   padding: 5rem 2rem;
-  background-color
+  background: -colorvar(--firefly); /* o transparente si hay video */
   
 }
   /* Ajuste visual específico para el hero de la sección "Nosotros" */
 
 .seccion-nosotros .hero-content h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 800;
   margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .seccion-nosotros .hero-content p {
   font-size: 2rem;
-  font-weight: 400;
   color: var(--white);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .seccion-nosotros .hero-content h2,
