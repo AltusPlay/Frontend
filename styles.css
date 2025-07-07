@@ -258,17 +258,15 @@ nav a {
   background-color: var(--cerulean);
 }
 
+
 /* ============================================
    SECCIÓN NOSOTROS
 ============================================ */
-
-/* 🔹 Contenedor general de la sección de introducción */
 .nosotros-intro {
   padding: 4rem 2rem;
   background-color: var(--firefly);
 }
 
-/* 🔹 Estructura interna: texto + imagen/video */
 .nosotros-contenido {
   display: flex;
   flex-wrap: wrap;
@@ -277,49 +275,38 @@ nav a {
   align-items: center;
 }
 
-/* 🔹 Columna de texto */
 .nosotros-contenido .texto {
   flex: 1 1 400px;
   color: var(--white);
 }
 
-/* 🔹 Título de la introducción */
 .nosotros-contenido .texto h2 {
   font-size: 4rem;
   color: var(--cerulean);
   margin-bottom: 1rem;
 }
 
-/* 🔹 Párrafos de introducción */
 .nosotros-contenido .texto p {
   line-height: 1.6;
   margin-bottom: 1rem;
   color: var(--bon-jour);
 }
 
-/* 🔹 Columna de imagen o video */
 .nosotros-contenido .imagen {
   flex: 1 1 300px;
 }
 
-/* 🔹 Estilo para imagen (aplica también si usas video con mismo estilo) */
 .nosotros-contenido .imagen img {
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* ============================================
-   VALORES (Innovación, Tecnología, Análisis)
-============================================ */
-
-/* 🔹 Contenedor de valores */
 .nosotros-valores {
   background-color: var(--firefly);
   padding: 4rem 2rem;
 }
 
-/* 🔹 Distribución horizontal de las tarjetas de valor */
 .nosotros-valores .valores {
   display: flex;
   flex-wrap: wrap;
@@ -327,7 +314,6 @@ nav a {
   justify-content: center;
 }
 
-/* 🔹 Tarjeta individual de valor */
 .nosotros-valores .valor {
   background-color: var(--blue-zodiac-dark);
   padding: 2rem;
@@ -337,29 +323,21 @@ nav a {
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
 }
 
-/* 🔹 Ícono en cada tarjeta de valor */
 .nosotros-valores .valor img {
   height: 160px;
   margin-bottom: 0.5rem;
 }
 
-/* 🔹 Título del valor */
 .nosotros-valores .valor h3 {
   color: var(--cerulean);
   margin-bottom: 0.5rem;
 }
 
-/* 🔹 Descripción del valor */
 .nosotros-valores .valor p {
   font-size: 0.9rem;
   color: var(--bon-jour);
 }
 
-/* ============================================
-   IDENTIDAD Y POLÍTICAS
-============================================ */
-
-/* 🔹 Contenedores de identidad y políticas */
 .nosotros-identidad, .nosotros-politicas {
   background-color: var(--firefly);
   padding: 4rem 2rem;
@@ -368,23 +346,18 @@ nav a {
   margin: 0 auto;
 }
 
-/* 🔹 Títulos */
 .nosotros-identidad h2, .nosotros-politicas h2 {
   font-size: 2rem;
   color: var(--cerulean);
   margin-bottom: 1rem;
 }
 
-/* 🔹 Párrafos y lista */
-.nosotros-identidad p,
-.nosotros-politicas p,
-.nosotros-politicas ul li {
+.nosotros-identidad p, .nosotros-politicas p, .nosotros-politicas ul li {
   color: var(--bon-jour);
   line-height: 1.6;
   font-size: 1rem;
 }
 
-/* 🔹 Lista de políticas */
 .nosotros-politicas ul {
   list-style: none;
   padding-left: 0;
@@ -393,40 +366,29 @@ nav a {
   margin: 0 auto;
 }
 
-/* 🔹 Ítems de lista */
 .nosotros-politicas ul li {
   margin-bottom: 1rem;
 }
 
-/* 🔹 Palabras clave destacadas */
 .nosotros-politicas ul li strong {
   color: var(--cerulean);
 }
 
-/* ============================================
-   RESPONSIVE - MOBILE AJUSTES
-============================================ */
 @media (max-width: 768px) {
-  /* 🔹 Apilar texto e imagen en vertical */
   .nosotros-contenido {
     flex-direction: column;
     text-align: center;
   }
 
-  /* 🔹 Mostrar imagen primero en móviles */
   .nosotros-contenido .imagen {
     order: -1;
   }
 
-  /* 🔹 Apilar valores en columna */
   .nosotros-valores .valores {
     flex-direction: column;
   }
 }
 
-/* ============================================
-   HERO DE LA SECCIÓN "NOSOTROS"
-============================================ */
 .hero-nosotros {
   position: relative;
   color: white;
@@ -439,8 +401,8 @@ nav a {
   padding: 5rem 2rem;
   background-color: var(--firefly); /* Puedes usar transparent si es video de fondo */
 }
+  /* Ajuste visual específico para el hero de la sección "Nosotros" */
 
-/* 🔹 Estilo del título del hero */
 .seccion-nosotros .hero-content h2 {
   font-size: 5rem;
   font-weight: 800;
@@ -448,20 +410,16 @@ nav a {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-/* 🔹 Estilo del subtítulo del hero */
 .seccion-nosotros .hero-content p {
   font-size: 2rem;
   color: var(--white);
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-/* 🔹 Unificación de sombra para ambos elementos */
 .seccion-nosotros .hero-content h2,
 .seccion-nosotros .hero-content p {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
-
-
 
 /* ============================================
    CONTENIDO Y PIE DE PÁGINA
