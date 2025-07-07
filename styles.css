@@ -282,7 +282,12 @@ nav a {
 .nosotros-contenido .texto {
   flex: 1 1 400px;
   color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* ✅ Alinea el texto al inicio del contenedor */
+  max-width: 600px;          /* ✅ Evita que se desborde */
 }
+
 
 /* 🔹 Título de la introducción */
 .nosotros-contenido .texto h2 {
@@ -434,10 +439,17 @@ nav a {
 ============================================ */
 @media (max-width: 768px) {
   /* 🔹 Apilar texto e imagen en vertical */
+@media (max-width: 768px) {
   .nosotros-contenido {
     flex-direction: column;
+    align-items: center; /* mejor control visual */
+  }
+
+  .nosotros-contenido .texto {
+    align-items: center; /* solo en móvil sí lo centramos */
     text-align: center;
   }
+}
 
   /* 🔹 Mostrar imagen primero en móviles */
   .nosotros-contenido .imagen {
