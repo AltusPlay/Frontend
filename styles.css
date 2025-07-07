@@ -399,8 +399,7 @@ nav a {
   justify-content: center;
   align-items: center;
   padding: 5rem 2rem;
-  background: -colorvar(--firefly); /* o transparente si hay video */
-  
+  background-color: var(--firefly); /* Puedes usar transparent si es video de fondo */
 }
   /* Ajuste visual específico para el hero de la sección "Nosotros" */
 
