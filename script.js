@@ -71,28 +71,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-// ============================================
-// ANIMACIÓN: Scroll Reveal para frases
-// ============================================
-
-document.addEventListener("DOMContentLoaded", () => {
-  const frases = document.querySelectorAll(".frases-nosotros p");
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target); // solo una vez
-      }
-    });
-  }, {
-    threshold: 0.2
-  });
-
-  frases.forEach((frase, index) => {
-    frase.classList.add("scroll-reveal");
-    frase.style.transitionDelay = `${index * 150}ms`; // animación secuencial
-    observer.observe(frase);
-  });
-});
