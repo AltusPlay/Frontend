@@ -573,3 +573,15 @@ footer {
     transform: translateY(0);
   }
 }
+
+/* Animación para frases que aparecen al hacer scroll */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
