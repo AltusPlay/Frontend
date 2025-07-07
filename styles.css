@@ -278,22 +278,35 @@ nav a {
   align-items: center;
 }
 
-/* 🔹 Columna de texto */
+/* 🔧 Contenedor de texto */
 .nosotros-contenido .texto {
-  flex: 1 1 400px;
-  color: var(--white);
+  flex: 1 1 600px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;   /* ✅ Alinea el texto al inicio del contenedor */
-  max-width: 600px;          /* ✅ Evita que se desborde */
+  align-items: flex-start;         /* Alinea todo el texto al borde izquierdo */
+  color: var(--white);
 }
 
 
-/* 🔹 Título de la introducción */
+/* 🔧 Título */
 .nosotros-contenido .texto h2 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: var(--white);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+/* 🔧 Lista */
+.nosotros-contenido .texto ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nosotros-contenido .texto li {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: var(--bon-jour);
+  margin-bottom: 1.5rem;
 }
 
 /* 🔹 Párrafos de introducción */
@@ -303,9 +316,15 @@ nav a {
   color: var(--bon-jour);
 }
 
-/* 🔹 Columna de imagen o video */
+/* 🔧 Video */
 .nosotros-contenido .imagen {
-  flex: 1 1 300px;
+  flex: 1 1 500px;
+}
+
+.nosotros-contenido .imagen video {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* 🔹 Estilo para imagen (aplica también si usas video con mismo estilo) */
