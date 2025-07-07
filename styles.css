@@ -262,18 +262,6 @@ nav a {
 /* ============================================
    SECCIÓN NOSOTROS
 ============================================ */
-.hero-nosotros {
-  position: relative;
-  color: white;
-  text-align: center;
-  overflow: hidden;
-  min-height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 2rem;
-  background-color
-
 .nosotros-intro {
   padding: 4rem 2rem;
   background-color: var(--firefly);
@@ -400,6 +388,18 @@ nav a {
     flex-direction: column;
   }
 }
+
+.hero-nosotros {
+  position: relative;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+  background-color
 /* ============================================
    CONTENIDO Y PIE DE PÁGINA
 ============================================ */
